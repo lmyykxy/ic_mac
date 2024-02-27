@@ -1,14 +1,3 @@
-/*****************************************************
-*  
-*  Filename    : wtree_4to2_16x16.v
-*  Author      : lucky_yuhua@aliyun.com
-*  Create Date : 2019-08-01
-*  Last Modify : 2019-08-01
-*  Purpose     : this module process 9 18bit partial product
-*                Carry Save Adder
-*                Wallace tree using 5-3 compressing mode
-*****************************************************/
-
 `timescale 1ns/1ps
 
 `include "mult16_def.v"

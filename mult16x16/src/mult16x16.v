@@ -1,12 +1,3 @@
-/*****************************************************
-*  
-*  Filename    : mult16x16.v
-*  Author      : lucky_yuhua@aliyun.com
-*  Create Date : 2019-07-30
-*  Last Modify : 2019-07-30
-*  Purpose     : multiplier for 16bits X 16bits
-*
-*****************************************************/
 
 `timescale 1ns/1ps
 module mult16x16 (
