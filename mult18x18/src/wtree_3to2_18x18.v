@@ -345,10 +345,10 @@ full_adder u_a31_28(.a(stg2_s1_w[28]), .b(stg2_c1_w[27]), .ci(stg2_s2_w[21]), .s
 full_adder u_a31_29(.a(stg2_s1_w[29]), .b(stg2_c1_w[28]), .ci(stg2_s2_w[22]), .s(stg3_s1[29]), .co(stg3_c1[29]));
 full_adder u_a31_30(.a(stg2_s1_w[29]), .b(stg2_c1_w[29]), .ci(stg2_s2_w[23]), .s(stg3_s1[30]), .co(stg3_c1[30]));
 full_adder u_a31_31(.a(stg2_s1_w[29]), .b(stg2_c1_w[29]), .ci(stg2_s2_w[24]), .s(stg3_s1[31]), .co(stg3_c1[31]));
-full_adder u_a31_32(.a(stg2_s1_w[29]), .b(stg2_c1_w[29]), .ci(stg2_s2_w[25]), .s(stg3_s1[31]), .co(stg3_c1[32]));
-full_adder u_a31_33(.a(stg2_s1_w[29]), .b(stg2_c1_w[29]), .ci(stg2_s2_w[26]), .s(stg3_s1[31]), .co(stg3_c1[33]));
-full_adder u_a31_34(.a(stg2_s1_w[29]), .b(stg2_c1_w[29]), .ci(stg2_s2_w[27]), .s(stg3_s1[31]), .co(stg3_c1[34]));
-full_adder u_a31_35(.a(stg2_s1_w[29]), .b(stg2_c1_w[29]), .ci(stg2_s2_w[28]), .s(stg3_s1[31]), .co(stg3_c1[35]));
+full_adder u_a31_32(.a(stg2_s1_w[29]), .b(stg2_c1_w[29]), .ci(stg2_s2_w[25]), .s(stg3_s1[32]), .co(stg3_c1[32]));
+full_adder u_a31_33(.a(stg2_s1_w[29]), .b(stg2_c1_w[29]), .ci(stg2_s2_w[26]), .s(stg3_s1[33]), .co(stg3_c1[33]));
+full_adder u_a31_34(.a(stg2_s1_w[29]), .b(stg2_c1_w[29]), .ci(stg2_s2_w[27]), .s(stg3_s1[34]), .co(stg3_c1[34]));
+full_adder u_a31_35(.a(stg2_s1_w[29]), .b(stg2_c1_w[29]), .ci(stg2_s2_w[28]), .s(stg3_s1[35]), .co(stg3_c1[35]));
 
 wire [35:0] stg3_s1_w, stg3_c1_w;
 wire [28:0] stg2_c2_w2;
