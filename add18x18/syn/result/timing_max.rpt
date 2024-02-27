@@ -1,0 +1,3635 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 50000
+        -capacitance
+        -sort_by slack
+Design : wrap
+Version: R-2020.09-SP4
+Date   : Tue Feb 27 08:28:45 2024
+****************************************
+
+Operating Conditions: tt_v1p2_25c   Library: scc55nll_hd_rvt_tt_v1p2_25c_basic
+Wire Load Model Mode: top
+
+  Startpoint: multa_reg_12_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_25_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_12_/CK (DSNHDV4)               0.00       0.00 r
+  multa_reg_12_/QN (DSNHDV4)     0.00      0.13       0.13 r
+  U1514/ZN (XNOR2HDV4)           0.00      0.11       0.24 f
+  U226/Z (BUFHDV24)              0.03      0.06       0.30 f
+  U1180/ZN (NAND2HDV24)          0.02      0.03       0.33 r
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.36 f
+  U1363/ZN (XNOR2HDV2)           0.00      0.10       0.46 r
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 f
+  U1361/ZN (XNOR2HDV4)           0.00      0.10       0.64 r
+  U644/ZN (XNOR2HDV2)            0.00      0.07       0.71 f
+  U643/ZN (XNOR2HDV4)            0.00      0.10       0.82 r
+  U923/ZN (CLKNAND2HDV4)         0.00      0.03       0.85 f
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 r
+  U1482/ZN (AOI21HDV4)           0.00      0.02       0.91 f
+  U1481/ZN (OAI21HDV4)           0.00      0.05       0.96 r
+  U1479/ZN (AOI21HDV4)           0.00      0.04       1.00 f
+  U1477/ZN (OAI21HDV4)           0.00      0.05       1.05 r
+  U1379/ZN (INHDV6)              0.00      0.03       1.07 f
+  U1380/ZN (INHDV12)             0.01      0.02       1.10 r
+  U1501/ZN (AOI21HDV2)           0.00      0.04       1.13 f
+  U1187/Z (XOR2HDV2)             0.00      0.07       1.20 r
+  product_reg_25_/D (DRNQHDV0)             0.00       1.20 r
+  data arrival time                                   1.20
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_25_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -1.20
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.59
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_26_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1481/ZN (OAI21HDV4)           0.00      0.04       0.97 f
+  U1479/ZN (AOI21HDV4)           0.00      0.05       1.01 r
+  U1477/ZN (OAI21HDV4)           0.00      0.04       1.05 f
+  U1379/ZN (INHDV6)              0.00      0.03       1.08 r
+  U1380/ZN (INHDV12)             0.01      0.02       1.10 f
+  U1503/ZN (AOI21HDV2)           0.00      0.05       1.15 r
+  U1146/Z (XOR2HDV2)             0.00      0.08       1.22 f
+  product_reg_26_/D (DRNQHDV0)             0.00       1.22 f
+  data arrival time                                   1.22
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_26_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.04       0.63
+  data required time                                  0.63
+  -----------------------------------------------------------
+  data required time                                  0.63
+  data arrival time                                  -1.22
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.59
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_27_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1481/ZN (OAI21HDV4)           0.00      0.04       0.97 f
+  U1479/ZN (AOI21HDV4)           0.00      0.05       1.01 r
+  U1477/ZN (OAI21HDV4)           0.00      0.04       1.05 f
+  U1379/ZN (INHDV6)              0.00      0.03       1.08 r
+  U1380/ZN (INHDV12)             0.01      0.02       1.10 f
+  U1736/ZN (AOI21HDV2)           0.00      0.05       1.15 r
+  U1737/Z (XOR2HDV2)             0.00      0.08       1.22 f
+  product_reg_27_/D (DRNQHDV0)             0.00       1.22 f
+  data arrival time                                   1.22
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_27_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.04       0.63
+  data required time                                  0.63
+  -----------------------------------------------------------
+  data required time                                  0.63
+  data arrival time                                  -1.22
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.59
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_29_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1481/ZN (OAI21HDV4)           0.00      0.04       0.97 f
+  U1479/ZN (AOI21HDV4)           0.00      0.05       1.01 r
+  U1477/ZN (OAI21HDV4)           0.00      0.04       1.05 f
+  U1379/ZN (INHDV6)              0.00      0.03       1.08 r
+  U1380/ZN (INHDV12)             0.01      0.02       1.10 f
+  U1681/ZN (AOI21HDV2)           0.00      0.05       1.15 r
+  U1026/Z (XOR2HDV2)             0.00      0.08       1.22 f
+  product_reg_29_/D (DRNQHDV0)             0.00       1.22 f
+  data arrival time                                   1.22
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_29_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.04       0.63
+  data required time                                  0.63
+  -----------------------------------------------------------
+  data required time                                  0.63
+  data arrival time                                  -1.22
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.59
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_31_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1481/ZN (OAI21HDV4)           0.00      0.04       0.97 f
+  U1479/ZN (AOI21HDV4)           0.00      0.05       1.01 r
+  U1477/ZN (OAI21HDV4)           0.00      0.04       1.05 f
+  U1379/ZN (INHDV6)              0.00      0.03       1.08 r
+  U1380/ZN (INHDV12)             0.01      0.02       1.10 f
+  U1723/ZN (AOI21HDV2)           0.00      0.05       1.15 r
+  U1197/Z (XOR2HDV2)             0.00      0.08       1.22 f
+  product_reg_31_/D (DRNQHDV0)             0.00       1.22 f
+  data arrival time                                   1.22
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_31_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.04       0.63
+  data required time                                  0.63
+  -----------------------------------------------------------
+  data required time                                  0.63
+  data arrival time                                  -1.22
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.59
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_33_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1481/ZN (OAI21HDV4)           0.00      0.04       0.97 f
+  U1479/ZN (AOI21HDV4)           0.00      0.05       1.01 r
+  U1477/ZN (OAI21HDV4)           0.00      0.04       1.05 f
+  U1379/ZN (INHDV6)              0.00      0.03       1.08 r
+  U1380/ZN (INHDV12)             0.01      0.02       1.10 f
+  U1727/ZN (AOI21HDV2)           0.00      0.05       1.15 r
+  U1158/Z (XOR2HDV2)             0.00      0.08       1.22 f
+  product_reg_33_/D (DRNQHDV0)             0.00       1.22 f
+  data arrival time                                   1.22
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_33_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.04       0.63
+  data required time                                  0.63
+  -----------------------------------------------------------
+  data required time                                  0.63
+  data arrival time                                  -1.22
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.59
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_30_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1481/ZN (OAI21HDV4)           0.00      0.04       0.97 f
+  U1479/ZN (AOI21HDV4)           0.00      0.05       1.01 r
+  U1477/ZN (OAI21HDV4)           0.00      0.04       1.05 f
+  U1379/ZN (INHDV6)              0.00      0.03       1.08 r
+  U1380/ZN (INHDV12)             0.01      0.02       1.10 f
+  U1795/ZN (AOI21HDV2)           0.00      0.05       1.15 r
+  U1183/Z (XOR2HDV2)             0.00      0.08       1.22 f
+  product_reg_30_/D (DRNQHDV0)             0.00       1.22 f
+  data arrival time                                   1.22
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_30_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.04       0.63
+  data required time                                  0.63
+  -----------------------------------------------------------
+  data required time                                  0.63
+  data arrival time                                  -1.22
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.59
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_32_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1481/ZN (OAI21HDV4)           0.00      0.04       0.97 f
+  U1479/ZN (AOI21HDV4)           0.00      0.05       1.01 r
+  U1477/ZN (OAI21HDV4)           0.00      0.04       1.05 f
+  U1379/ZN (INHDV6)              0.00      0.03       1.08 r
+  U1380/ZN (INHDV12)             0.01      0.02       1.10 f
+  U1748/ZN (AOI21HDV2)           0.00      0.05       1.15 r
+  U1749/Z (XOR2HDV2)             0.00      0.08       1.22 f
+  product_reg_32_/D (DRNQHDV0)             0.00       1.22 f
+  data arrival time                                   1.22
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_32_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.04       0.63
+  data required time                                  0.63
+  -----------------------------------------------------------
+  data required time                                  0.63
+  data arrival time                                  -1.22
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.59
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_34_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1481/ZN (OAI21HDV4)           0.00      0.04       0.97 f
+  U1479/ZN (AOI21HDV4)           0.00      0.05       1.01 r
+  U1477/ZN (OAI21HDV4)           0.00      0.04       1.05 f
+  U1379/ZN (INHDV6)              0.00      0.03       1.08 r
+  U1380/ZN (INHDV12)             0.01      0.02       1.10 f
+  U1710/ZN (AOI21HDV2)           0.00      0.05       1.15 r
+  U1720/Z (XOR2HDV2)             0.00      0.08       1.22 f
+  product_reg_34_/D (DRNQHDV0)             0.00       1.22 f
+  data arrival time                                   1.22
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_34_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.04       0.63
+  data required time                                  0.63
+  -----------------------------------------------------------
+  data required time                                  0.63
+  data arrival time                                  -1.22
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.59
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_35_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1481/ZN (OAI21HDV4)           0.00      0.04       0.97 f
+  U1479/ZN (AOI21HDV4)           0.00      0.05       1.01 r
+  U1477/ZN (OAI21HDV4)           0.00      0.04       1.05 f
+  U1379/ZN (INHDV6)              0.00      0.03       1.08 r
+  U1380/ZN (INHDV12)             0.01      0.02       1.10 f
+  U1740/ZN (AOI21HDV2)           0.00      0.05       1.15 r
+  U1195/Z (XOR2HDV2)             0.00      0.08       1.22 f
+  product_reg_35_/D (DRNQHDV0)             0.00       1.22 f
+  data arrival time                                   1.22
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_35_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.04       0.63
+  data required time                                  0.63
+  -----------------------------------------------------------
+  data required time                                  0.63
+  data arrival time                                  -1.22
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.59
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_24_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1481/ZN (OAI21HDV4)           0.00      0.04       0.97 f
+  U1479/ZN (AOI21HDV4)           0.00      0.05       1.01 r
+  U1477/ZN (OAI21HDV4)           0.00      0.04       1.05 f
+  U1379/ZN (INHDV6)              0.00      0.03       1.08 r
+  U1380/ZN (INHDV12)             0.01      0.02       1.10 f
+  U1502/ZN (AOI21HDV2)           0.00      0.05       1.15 r
+  U1145/Z (XOR2HDV2)             0.00      0.08       1.22 f
+  product_reg_24_/D (DRNQHDV0)             0.00       1.22 f
+  data arrival time                                   1.22
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_24_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.04       0.63
+  data required time                                  0.63
+  -----------------------------------------------------------
+  data required time                                  0.63
+  data arrival time                                  -1.22
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.59
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_28_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1481/ZN (OAI21HDV4)           0.00      0.04       0.97 f
+  U1479/ZN (AOI21HDV4)           0.00      0.05       1.01 r
+  U1477/ZN (OAI21HDV4)           0.00      0.04       1.05 f
+  U1379/ZN (INHDV6)              0.00      0.03       1.08 r
+  U1380/ZN (INHDV12)             0.01      0.02       1.10 f
+  U1204/ZN (AOI21HDV2)           0.00      0.05       1.15 r
+  U1147/Z (XOR2HDV2)             0.00      0.08       1.22 f
+  product_reg_28_/D (DRNQHDV0)             0.00       1.22 f
+  data arrival time                                   1.22
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_28_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.04       0.63
+  data required time                                  0.63
+  -----------------------------------------------------------
+  data required time                                  0.63
+  data arrival time                                  -1.22
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.59
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_21_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1481/ZN (OAI21HDV4)           0.00      0.04       0.97 f
+  U1479/ZN (AOI21HDV4)           0.00      0.05       1.01 r
+  U1191/Z (BUFHDV3)              0.00      0.05       1.06 r
+  U178/ZN (INHDV4)               0.00      0.02       1.09 f
+  U751/ZN (AOI21HDV2)            0.00      0.05       1.14 r
+  U1498/Z (XOR2HDV2)             0.00      0.08       1.21 f
+  product_reg_21_/D (DRNQHDV0)             0.00       1.21 f
+  data arrival time                                   1.21
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_21_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.04       0.63
+  data required time                                  0.63
+  -----------------------------------------------------------
+  data required time                                  0.63
+  data arrival time                                  -1.21
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.58
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_22_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1481/ZN (OAI21HDV4)           0.00      0.04       0.97 f
+  U1479/ZN (AOI21HDV4)           0.00      0.05       1.01 r
+  U1191/Z (BUFHDV3)              0.00      0.05       1.06 r
+  U178/ZN (INHDV4)               0.00      0.02       1.09 f
+  U4/ZN (AOI21HDV2)              0.00      0.05       1.14 r
+  U1499/Z (XOR2HDV2)             0.00      0.08       1.21 f
+  product_reg_22_/D (DRNQHDV0)             0.00       1.21 f
+  data arrival time                                   1.21
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_22_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.04       0.63
+  data required time                                  0.63
+  -----------------------------------------------------------
+  data required time                                  0.63
+  data arrival time                                  -1.21
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.58
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_23_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1481/ZN (OAI21HDV4)           0.00      0.04       0.97 f
+  U1479/ZN (AOI21HDV4)           0.00      0.05       1.01 r
+  U1477/ZN (OAI21HDV4)           0.00      0.04       1.05 f
+  U1379/ZN (INHDV6)              0.00      0.03       1.08 r
+  U1380/ZN (INHDV12)             0.01      0.02       1.10 f
+  U1400/ZN (XNOR2HDV0)           0.00      0.09       1.19 r
+  product_reg_23_/D (DRNQHDV0)             0.00       1.19 r
+  data arrival time                                   1.19
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_23_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -1.19
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.58
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_20_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1481/ZN (OAI21HDV4)           0.00      0.04       0.97 f
+  U1479/ZN (AOI21HDV4)           0.00      0.05       1.01 r
+  U1191/Z (BUFHDV3)              0.00      0.05       1.06 r
+  U178/ZN (INHDV4)               0.00      0.02       1.09 f
+  U1757/ZN (AOI21HDV2)           0.00      0.05       1.13 r
+  U1497/Z (XOR2HDV2)             0.00      0.08       1.21 f
+  product_reg_20_/D (DRNQHDV0)             0.00       1.21 f
+  data arrival time                                   1.21
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_20_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.04       0.63
+  data required time                                  0.63
+  -----------------------------------------------------------
+  data required time                                  0.63
+  data arrival time                                  -1.21
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.58
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_19_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1481/ZN (OAI21HDV4)           0.00      0.04       0.97 f
+  U1479/ZN (AOI21HDV4)           0.00      0.05       1.01 r
+  U1191/Z (BUFHDV3)              0.00      0.05       1.06 r
+  U178/ZN (INHDV4)               0.00      0.02       1.09 f
+  U153/ZN (XNOR2HDV2)            0.00      0.06       1.15 r
+  product_reg_19_/D (DRNQHDV0)             0.00       1.15 r
+  data arrival time                                   1.15
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_19_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -1.15
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.54
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_18_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1481/ZN (OAI21HDV4)           0.00      0.04       0.97 f
+  U1143/ZN (INHDV0)              0.00      0.03       1.00 r
+  U1109/ZN (OAI21HDV2)           0.00      0.04       1.04 f
+  U429/ZN (XNOR2HDV2)            0.00      0.07       1.11 r
+  product_reg_18_/D (DRNQHDV0)             0.00       1.11 r
+  data arrival time                                   1.11
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_18_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -1.11
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.50
+
+
+  Startpoint: multa_reg_6_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_14_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_6_/CK (DRNQHDV4)               0.00       0.00 r
+  multa_reg_6_/Q (DRNQHDV4)      0.00      0.13       0.13 f
+  U1537/ZN (XNOR2HDV4)           0.00      0.11       0.23 r
+  U849/ZN (INHDV4)               0.00      0.03       0.26 f
+  U336/ZN (INHDV10)              0.01      0.03       0.28 r
+  U1414/ZN (NAND2HDV24)          0.02      0.03       0.32 f
+  U1483/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U820/Z (XOR2HDV2)              0.00      0.11       0.47 f
+  U176/ZN (XNOR2HDV4)            0.00      0.08       0.55 r
+  U819/ZN (MUX2NHDV4)            0.00      0.05       0.59 r
+  U1133/Z (XOR2HDV4)             0.00      0.09       0.68 f
+  U916/ZN (NOR2HDV4)             0.00      0.04       0.72 r
+  U36/ZN (INHDV2)                0.00      0.03       0.75 f
+  U1365/ZN (CLKNAND2HDV4)        0.00      0.02       0.77 r
+  U1601/ZN (OAI21HDV4)           0.00      0.04       0.81 f
+  U1177/Z (AO21HDV2)             0.00      0.10       0.90 f
+  U141/ZN (CLKNHDV1)             0.00      0.02       0.93 r
+  U310/Z (OA21HDV4)              0.00      0.06       0.99 r
+  U1228/ZN (OAI21HDV0)           0.00      0.05       1.03 f
+  U1766/ZN (XNOR2HDV2)           0.00      0.07       1.10 r
+  product_reg_14_/D (DRNQHDV0)             0.00       1.10 r
+  data arrival time                                   1.10
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_14_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -1.10
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.49
+
+
+  Startpoint: multa_reg_12_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_17_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_12_/CK (DSNHDV4)               0.00       0.00 r
+  multa_reg_12_/QN (DSNHDV4)     0.00      0.13       0.13 r
+  U1514/ZN (XNOR2HDV4)           0.00      0.11       0.24 f
+  U226/Z (BUFHDV24)              0.03      0.06       0.30 f
+  U1180/ZN (NAND2HDV24)          0.02      0.03       0.33 r
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.36 f
+  U1363/ZN (XNOR2HDV2)           0.00      0.10       0.46 r
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 f
+  U1361/ZN (XNOR2HDV4)           0.00      0.10       0.64 r
+  U644/ZN (XNOR2HDV2)            0.00      0.07       0.71 f
+  U643/ZN (XNOR2HDV4)            0.00      0.10       0.82 r
+  U923/ZN (CLKNAND2HDV4)         0.00      0.03       0.85 f
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 r
+  U1482/ZN (AOI21HDV4)           0.00      0.02       0.91 f
+  U1481/ZN (OAI21HDV4)           0.00      0.05       0.96 r
+  U1143/ZN (INHDV0)              0.00      0.03       0.99 f
+  U432/Z (XOR2HDV2)              0.00      0.09       1.08 r
+  product_reg_17_/D (DRNQHDV0)             0.00       1.08 r
+  data arrival time                                   1.08
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_17_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -1.08
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.47
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_16_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1405/ZN (INHDV0)              0.00      0.04       0.97 f
+  U1511/ZN (AOI21HDV2)           0.00      0.05       1.02 r
+  U431/Z (XOR2HDV2)              0.00      0.08       1.10 f
+  product_reg_16_/D (DRNQHDV0)             0.00       1.10 f
+  data arrival time                                   1.10
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_16_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.04       0.63
+  data required time                                  0.63
+  -----------------------------------------------------------
+  data required time                                  0.63
+  data arrival time                                  -1.10
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.47
+
+
+  Startpoint: multa_reg_3_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_13_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_3_/CK (DRNQHDV4)               0.00       0.00 r
+  multa_reg_3_/Q (DRNQHDV4)      0.00      0.14       0.14 f
+  U175/Z (XOR2HDV2)              0.01      0.12       0.25 r
+  U1513/ZN (NAND2HDV12)          0.02      0.06       0.31 f
+  U125/ZN (OAI22HDV2)            0.00      0.08       0.38 r
+  U584/Z (XOR2HDV2)              0.00      0.10       0.49 f
+  U361/ZN (CLKNAND2HDV4)         0.00      0.03       0.52 r
+  U1445/Z (CLKAND2HDV4)          0.00      0.04       0.56 r
+  U819/ZN (MUX2NHDV4)            0.00      0.04       0.60 f
+  U1133/Z (XOR2HDV4)             0.00      0.08       0.68 r
+  U916/ZN (NOR2HDV4)             0.00      0.02       0.70 f
+  U36/ZN (INHDV2)                0.00      0.03       0.73 r
+  U1365/ZN (CLKNAND2HDV4)        0.00      0.02       0.75 f
+  U1601/ZN (OAI21HDV4)           0.00      0.05       0.80 r
+  U1177/Z (AO21HDV2)             0.00      0.08       0.88 r
+  U141/ZN (CLKNHDV1)             0.00      0.02       0.91 f
+  U310/Z (OA21HDV4)              0.00      0.08       0.98 f
+  U1769/Z (XOR2HDV2)             0.00      0.07       1.05 r
+  product_reg_13_/D (DRNQHDV0)             0.00       1.05 r
+  data arrival time                                   1.05
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_13_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -1.05
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.44
+
+
+  Startpoint: multa_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_15_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.00 r
+  multa_reg_13_/Q (DRNQHDV4)     0.01      0.14       0.14 f
+  U1516/Z (XOR2HDV4)             0.01      0.13       0.27 r
+  U1180/ZN (NAND2HDV24)          0.02      0.04       0.31 f
+  U1007/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U1363/ZN (XNOR2HDV2)           0.00      0.11       0.46 f
+  U817/ZN (XNOR2HDV2)            0.00      0.07       0.53 r
+  U1361/ZN (XNOR2HDV4)           0.00      0.11       0.64 f
+  U1407/ZN (CLKNAND2HDV4)        0.00      0.03       0.67 r
+  U683/ZN (CLKNAND2HDV4)         0.00      0.03       0.69 f
+  U680/ZN (OAI21HDV4)            0.00      0.05       0.75 r
+  U679/ZN (INHDV4)               0.00      0.02       0.77 f
+  U686/ZN (NAND2HDV4)            0.00      0.02       0.79 r
+  U807/ZN (CLKNAND2HDV4)         0.00      0.03       0.82 f
+  U805/ZN (NOR2HDV8)             0.00      0.04       0.85 r
+  U1637/ZN (OAI21HDV4)           0.00      0.04       0.89 f
+  U1482/ZN (AOI21HDV4)           0.00      0.04       0.93 r
+  U1405/ZN (INHDV0)              0.00      0.04       0.97 f
+  U434/ZN (XNOR2HDV2)            0.00      0.07       1.04 r
+  product_reg_15_/D (DRNQHDV0)             0.00       1.04 r
+  data arrival time                                   1.04
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_15_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -1.04
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.42
+
+
+  Startpoint: multa_reg_6_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_12_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_6_/CK (DRNQHDV4)               0.00       0.00 r
+  multa_reg_6_/Q (DRNQHDV4)      0.00      0.13       0.13 f
+  U1537/ZN (XNOR2HDV4)           0.00      0.11       0.23 r
+  U849/ZN (INHDV4)               0.00      0.03       0.26 f
+  U336/ZN (INHDV10)              0.01      0.03       0.28 r
+  U1414/ZN (NAND2HDV24)          0.02      0.03       0.32 f
+  U1483/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U820/Z (XOR2HDV2)              0.00      0.11       0.47 f
+  U176/ZN (XNOR2HDV4)            0.00      0.08       0.55 r
+  U819/ZN (MUX2NHDV4)            0.00      0.05       0.59 r
+  U1133/Z (XOR2HDV4)             0.00      0.09       0.68 f
+  U916/ZN (NOR2HDV4)             0.00      0.04       0.72 r
+  U36/ZN (INHDV2)                0.00      0.03       0.75 f
+  U1365/ZN (CLKNAND2HDV4)        0.00      0.02       0.77 r
+  U1601/ZN (OAI21HDV4)           0.00      0.04       0.81 f
+  U1177/Z (AO21HDV2)             0.00      0.10       0.90 f
+  U1770/ZN (AOI21HDV2)           0.00      0.05       0.96 r
+  U1772/Z (XOR2HDV2)             0.00      0.08       1.03 f
+  product_reg_12_/D (DRNQHDV0)             0.00       1.03 f
+  data arrival time                                   1.03
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_12_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.04       0.63
+  data required time                                  0.63
+  -----------------------------------------------------------
+  data required time                                  0.63
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.40
+
+
+  Startpoint: multa_reg_6_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_11_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_6_/CK (DRNQHDV4)               0.00       0.00 r
+  multa_reg_6_/Q (DRNQHDV4)      0.00      0.13       0.13 f
+  U1537/ZN (XNOR2HDV4)           0.00      0.11       0.23 r
+  U849/ZN (INHDV4)               0.00      0.03       0.26 f
+  U336/ZN (INHDV10)              0.01      0.03       0.28 r
+  U1414/ZN (NAND2HDV24)          0.02      0.03       0.32 f
+  U1483/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U820/Z (XOR2HDV2)              0.00      0.11       0.47 f
+  U176/ZN (XNOR2HDV4)            0.00      0.08       0.55 r
+  U819/ZN (MUX2NHDV4)            0.00      0.05       0.59 r
+  U1133/Z (XOR2HDV4)             0.00      0.09       0.68 f
+  U916/ZN (NOR2HDV4)             0.00      0.04       0.72 r
+  U36/ZN (INHDV2)                0.00      0.03       0.75 f
+  U1365/ZN (CLKNAND2HDV4)        0.00      0.02       0.77 r
+  U1601/ZN (OAI21HDV4)           0.00      0.04       0.81 f
+  U1177/Z (AO21HDV2)             0.00      0.10       0.90 f
+  U1773/ZN (XNOR2HDV2)           0.00      0.09       1.00 r
+  product_reg_11_/D (DRNQHDV0)             0.00       1.00 r
+  data arrival time                                   1.00
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_11_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -1.00
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.39
+
+
+  Startpoint: multa_reg_6_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_10_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_6_/CK (DRNQHDV4)               0.00       0.00 r
+  multa_reg_6_/Q (DRNQHDV4)      0.00      0.13       0.13 f
+  U1537/ZN (XNOR2HDV4)           0.00      0.11       0.23 r
+  U849/ZN (INHDV4)               0.00      0.03       0.26 f
+  U336/ZN (INHDV10)              0.01      0.03       0.28 r
+  U1414/ZN (NAND2HDV24)          0.02      0.03       0.32 f
+  U1483/ZN (OAI22HDV4)           0.00      0.04       0.35 r
+  U820/Z (XOR2HDV2)              0.00      0.11       0.47 f
+  U176/ZN (XNOR2HDV4)            0.00      0.08       0.55 r
+  U819/ZN (MUX2NHDV4)            0.00      0.05       0.59 r
+  U1133/Z (XOR2HDV4)             0.00      0.09       0.68 f
+  U916/ZN (NOR2HDV4)             0.00      0.04       0.72 r
+  U36/ZN (INHDV2)                0.00      0.03       0.75 f
+  U1365/ZN (CLKNAND2HDV4)        0.00      0.02       0.77 r
+  U1601/ZN (OAI21HDV4)           0.00      0.04       0.81 f
+  U1775/ZN (XNOR2HDV2)           0.00      0.09       0.90 r
+  product_reg_10_/D (DRNQHDV0)             0.00       0.90 r
+  data arrival time                                   0.90
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_10_/CK (DRNQHDV0)            0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.90
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.29
+
+
+  Startpoint: multa_reg_6_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_9_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_6_/CK (DRNQHDV4)               0.00       0.00 r
+  multa_reg_6_/Q (DRNQHDV4)      0.00      0.13       0.13 f
+  U1537/ZN (XNOR2HDV4)           0.00      0.11       0.23 r
+  U849/ZN (INHDV4)               0.00      0.03       0.26 f
+  U336/ZN (INHDV10)              0.01      0.03       0.28 r
+  U1414/ZN (NAND2HDV24)          0.02      0.03       0.32 f
+  U1022/ZN (OAI22HDV2)           0.00      0.05       0.36 r
+  U1111/Z (XOR2HDV4)             0.00      0.12       0.48 f
+  U1377/ZN (XNOR2HDV2)           0.00      0.08       0.56 r
+  U1136/Z (XOR2HDV2)             0.00      0.10       0.66 f
+  U1104/ZN (CLKNHDV3)            0.00      0.02       0.68 r
+  U1395/ZN (CLKNAND2HDV4)        0.00      0.03       0.71 f
+  U1452/ZN (AOI21HDV4)           0.00      0.05       0.76 r
+  U96/ZN (INHDV2)                0.00      0.03       0.79 f
+  U455/ZN (AOI21HDV2)            0.00      0.05       0.83 r
+  U1777/Z (XOR2HDV2)             0.00      0.08       0.91 f
+  product_reg_9_/D (DRNQHDV0)              0.00       0.91 f
+  data arrival time                                   0.91
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_9_/CK (DRNQHDV0)             0.00       0.67 r
+  library setup time                      -0.04       0.63
+  data required time                                  0.63
+  -----------------------------------------------------------
+  data required time                                  0.63
+  data arrival time                                  -0.91
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.28
+
+
+  Startpoint: multa_reg_6_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_8_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_6_/CK (DRNQHDV4)               0.00       0.00 r
+  multa_reg_6_/Q (DRNQHDV4)      0.00      0.13       0.13 f
+  U1537/ZN (XNOR2HDV4)           0.00      0.11       0.23 r
+  U849/ZN (INHDV4)               0.00      0.03       0.26 f
+  U336/ZN (INHDV10)              0.01      0.03       0.28 r
+  U1414/ZN (NAND2HDV24)          0.02      0.03       0.32 f
+  U1022/ZN (OAI22HDV2)           0.00      0.05       0.36 r
+  U1111/Z (XOR2HDV4)             0.00      0.12       0.48 f
+  U1377/ZN (XNOR2HDV2)           0.00      0.08       0.56 r
+  U1136/Z (XOR2HDV2)             0.00      0.10       0.66 f
+  U1104/ZN (CLKNHDV3)            0.00      0.02       0.68 r
+  U1395/ZN (CLKNAND2HDV4)        0.00      0.03       0.71 f
+  U1452/ZN (AOI21HDV4)           0.00      0.05       0.76 r
+  U96/ZN (INHDV2)                0.00      0.03       0.79 f
+  U1778/ZN (XNOR2HDV2)           0.00      0.09       0.87 r
+  product_reg_8_/D (DRNQHDV0)              0.00       0.87 r
+  data arrival time                                   0.87
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_8_/CK (DRNQHDV0)             0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.87
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.26
+
+
+  Startpoint: multa_reg_4_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_7_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_4_/CK (DRNQHDV4)               0.00       0.00 r
+  multa_reg_4_/Q (DRNQHDV4)      0.00      0.13       0.13 r
+  U1519/ZN (XNOR2HDV4)           0.00      0.11       0.24 f
+  U861/ZN (INHDV8)               0.01      0.03       0.27 r
+  U832/ZN (INHDV12)              0.02      0.03       0.30 f
+  U841/Z (BUFHDV12)              0.01      0.05       0.34 f
+  U1356/ZN (OAI22HDV2)           0.00      0.07       0.41 r
+  U243/ZN (CLKNAND2HDV4)         0.00      0.04       0.45 f
+  U1134/ZN (CLKNAND2HDV4)        0.00      0.02       0.47 r
+  U32/Z (XOR2HDV2)               0.00      0.10       0.57 f
+  U1136/Z (XOR2HDV2)             0.00      0.08       0.65 r
+  U1104/ZN (CLKNHDV3)            0.00      0.02       0.67 f
+  U1395/ZN (CLKNAND2HDV4)        0.00      0.02       0.70 r
+  U90/ZN (CLKNAND2HDV1)          0.00      0.03       0.73 f
+  U84/ZN (XNOR2HDV2)             0.00      0.07       0.80 r
+  product_reg_7_/D (DRNQHDV0)              0.00       0.80 r
+  data arrival time                                   0.80
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_7_/CK (DRNQHDV0)             0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.80
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.19
+
+
+  Startpoint: multa_reg_4_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_6_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_4_/CK (DRNQHDV4)               0.00       0.00 r
+  multa_reg_4_/Q (DRNQHDV4)      0.00      0.13       0.13 r
+  U1519/ZN (XNOR2HDV4)           0.00      0.11       0.24 f
+  U861/ZN (INHDV8)               0.01      0.03       0.27 r
+  U832/ZN (INHDV12)              0.02      0.03       0.30 f
+  U841/Z (BUFHDV12)              0.01      0.05       0.34 f
+  U1356/ZN (OAI22HDV2)           0.00      0.07       0.41 r
+  U1135/Z (XOR2HDV2)             0.00      0.11       0.53 f
+  U1152/Z (XOR2HDV4)             0.00      0.10       0.63 r
+  U1593/ZN (NOR2HDV4)            0.00      0.02       0.65 f
+  U1106/ZN (CLKNHDV1)            0.00      0.02       0.67 r
+  U490/ZN (NAND2HDV1)            0.00      0.03       0.70 f
+  U560/Z (CLKXOR2HDV1)           0.00      0.07       0.77 r
+  product_reg_6_/D (DRNQHDV0)              0.00       0.77 r
+  data arrival time                                   0.77
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_6_/CK (DRNQHDV0)             0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.77
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.16
+
+
+  Startpoint: multa_reg_3_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_5_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_3_/CK (DRNQHDV4)               0.00       0.00 r
+  multa_reg_3_/Q (DRNQHDV4)      0.00      0.14       0.14 f
+  U175/Z (XOR2HDV2)              0.01      0.12       0.25 r
+  U1513/ZN (NAND2HDV12)          0.02      0.06       0.31 f
+  U121/ZN (OAI22HDV2)            0.00      0.07       0.38 r
+  U1358/Z (XOR2HDV2)             0.00      0.12       0.49 f
+  U87/ZN (XNOR2HDV2)             0.00      0.08       0.57 r
+  U526/ZN (INHDV1)               0.00      0.02       0.59 f
+  U189/ZN (CLKNAND2HDV4)         0.00      0.02       0.61 r
+  U1781/ZN (NAND2HDV1)           0.00      0.04       0.65 f
+  U1782/ZN (XNOR2HDV2)           0.00      0.07       0.72 r
+  product_reg_5_/D (DRNQHDV0)              0.00       0.72 r
+  data arrival time                                   0.72
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_5_/CK (DRNQHDV0)             0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.72
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.11
+
+
+  Startpoint: multa_reg_1_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_4_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_1_/CK (DRNHDV2)                0.00       0.00 r
+  multa_reg_1_/QN (DRNHDV2)      0.00      0.10       0.10 f
+  U1198/ZN (INHDV4)              0.00      0.03       0.13 r
+  U1266/ZN (INHDV8)              0.01      0.02       0.15 f
+  U410/ZN (INHDV24)              0.03      0.03       0.18 r
+  U1459/ZN (XNOR2HDV2)           0.00      0.10       0.27 f
+  U385/ZN (OAI22HDV2)            0.00      0.06       0.33 r
+  U1458/Z (XOR2HDV2)             0.00      0.11       0.45 f
+  U1457/Z (XOR2HDV2)             0.00      0.08       0.52 r
+  U1067/ZN (NOR2HDV2)            0.00      0.03       0.55 f
+  U508/ZN (INHDV1)               0.00      0.02       0.57 r
+  U500/ZN (CLKNAND2HDV1)         0.00      0.03       0.60 f
+  U1783/Z (XOR2HDV2)             0.00      0.07       0.67 r
+  product_reg_4_/D (DRNQHDV0)              0.00       0.67 r
+  data arrival time                                   0.67
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_4_/CK (DRNQHDV0)             0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.67
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.06
+
+
+  Startpoint: multa_reg_1_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_3_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_1_/CK (DRNHDV2)                0.00       0.00 r
+  multa_reg_1_/Q (DRNHDV2)       0.00      0.14       0.14 r
+  U1512/ZN (XNOR2HDV4)           0.01      0.13       0.27 f
+  U827/ZN (INHDV8)               0.00      0.03       0.29 r
+  U826/ZN (INHDV10)              0.02      0.03       0.33 f
+  U1596/ZN (OAI22HDV4)           0.00      0.05       0.38 r
+  U1597/S (ADH1HDV1)             0.00      0.05       0.43 r
+  U93/ZN (NOR2HDV2)              0.00      0.03       0.47 f
+  U1784/ZN (INHDV1)              0.00      0.02       0.49 r
+  U506/ZN (CLKNAND2HDV1)         0.00      0.03       0.52 f
+  U556/Z (XOR2HDV0)              0.00      0.07       0.59 r
+  product_reg_3_/D (DRNQHDV0)              0.00       0.59 r
+  data arrival time                                   0.59
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_3_/CK (DRNQHDV0)             0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+  Startpoint: multa_reg_1_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_2_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_1_/CK (DRNHDV2)                0.00       0.00 r
+  multa_reg_1_/QN (DRNHDV2)      0.00      0.11       0.11 r
+  U1198/ZN (INHDV4)              0.00      0.03       0.13 f
+  U1266/ZN (INHDV8)              0.01      0.03       0.16 r
+  U410/ZN (INHDV24)              0.03      0.03       0.18 f
+  U1599/ZN (XNOR2HDV1)           0.00      0.10       0.28 r
+  U289/ZN (NOR2HDV1)             0.00      0.02       0.30 f
+  U383/ZN (NOR2HDV2)             0.00      0.05       0.35 r
+  U369/ZN (INHDV1)               0.00      0.02       0.38 f
+  U107/ZN (NAND2HDV1)            0.00      0.03       0.41 r
+  U355/ZN (NAND2HDV2)            0.00      0.04       0.45 f
+  U3/ZN (XNOR2HDV1)              0.00      0.07       0.52 r
+  product_reg_2_/D (DRNQHDV0)              0.00       0.52 r
+  data arrival time                                   0.52
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_2_/CK (DRNQHDV0)             0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.52
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: multa_reg_1_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_1_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multa_reg_1_/CK (DRNHDV2)                0.00       0.00 r
+  multa_reg_1_/QN (DRNHDV2)      0.00      0.11       0.11 r
+  U1198/ZN (INHDV4)              0.00      0.03       0.13 f
+  U1266/ZN (INHDV8)              0.01      0.03       0.16 r
+  U410/ZN (INHDV24)              0.03      0.03       0.18 f
+  U1599/ZN (XNOR2HDV1)           0.00      0.10       0.28 r
+  U1600/ZN (OAI22HDV2)           0.00      0.04       0.32 f
+  U558/Z (CLKAND2HDV2)           0.00      0.06       0.38 f
+  U212/ZN (CLKNHDV0)             0.00      0.02       0.40 r
+  U528/Z (CLKAND2HDV2)           0.00      0.05       0.45 r
+  product_reg_1_/D (DRNQHDV0)              0.00       0.45 r
+  data arrival time                                   0.45
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_1_/CK (DRNQHDV0)             0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.45
+  -----------------------------------------------------------
+  slack (MET)                                         0.16
+
+
+  Startpoint: multb_reg_0_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: product_reg_0_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  multb_reg_0_/CK (DSNHDV4)                0.00       0.00 r
+  multb_reg_0_/QN (DSNHDV4)      0.02      0.19       0.19 r
+  U1786/ZN (INOR2HDV2)           0.00      0.07       0.26 r
+  product_reg_0_/D (DRNQHDV0)              0.00       0.26 r
+  data arrival time                                   0.26
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  product_reg_0_/CK (DRNQHDV0)             0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.26
+  -----------------------------------------------------------
+  slack (MET)                                         0.35
+
+
+  Startpoint: product_reg_35_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[35]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_35_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_35_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[35] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_34_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[34]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_34_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_34_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[34] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_33_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[33]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_33_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_33_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[33] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_32_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[32]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_32_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_32_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[32] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_31_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[31]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_31_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_31_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[31] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_30_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[30]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_30_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_30_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[30] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_29_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[29]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_29_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_29_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[29] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_28_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[28]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_28_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_28_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[28] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_27_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[27]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_27_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_27_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[27] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_26_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[26]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_26_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_26_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[26] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_25_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[25]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_25_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_25_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[25] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_24_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[24]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_24_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_24_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[24] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_23_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[23]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_23_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_23_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[23] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_22_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[22]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_22_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_22_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[22] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_21_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[21]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_21_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_21_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[21] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_20_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[20]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_20_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_20_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[20] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_19_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[19]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_19_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_19_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[19] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_18_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[18]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_18_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_18_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[18] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_17_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[17]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_17_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_17_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[17] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_16_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[16]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_16_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_16_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[16] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_15_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[15]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_15_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_15_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[15] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_14_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[14]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_14_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_14_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[14] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_13_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[13]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_13_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_13_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[13] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_12_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[12]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_12_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_12_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[12] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_11_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[11]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_11_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_11_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[11] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_10_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[10]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_10_/CK (DRNQHDV0)            0.00       0.00 r
+  product_reg_10_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[10] (out)                      0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_9_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[9]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_9_/CK (DRNQHDV0)             0.00       0.00 r
+  product_reg_9_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[9] (out)                       0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_8_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[8]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_8_/CK (DRNQHDV0)             0.00       0.00 r
+  product_reg_8_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[8] (out)                       0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_7_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[7]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_7_/CK (DRNQHDV0)             0.00       0.00 r
+  product_reg_7_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[7] (out)                       0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_6_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[6]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_6_/CK (DRNQHDV0)             0.00       0.00 r
+  product_reg_6_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[6] (out)                       0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_5_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[5]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_5_/CK (DRNQHDV0)             0.00       0.00 r
+  product_reg_5_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[5] (out)                       0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_4_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[4]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_4_/CK (DRNQHDV0)             0.00       0.00 r
+  product_reg_4_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[4] (out)                       0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_3_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[3]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_3_/CK (DRNQHDV0)             0.00       0.00 r
+  product_reg_3_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[3] (out)                       0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_2_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[2]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_2_/CK (DRNQHDV0)             0.00       0.00 r
+  product_reg_2_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[2] (out)                       0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_1_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[1]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_1_/CK (DRNQHDV0)             0.00       0.00 r
+  product_reg_1_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[1] (out)                       0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: product_reg_0_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_product[0]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  product_reg_0_/CK (DRNQHDV0)             0.00       0.00 r
+  product_reg_0_/Q (DRNQHDV0)
+                                 0.00      0.13       0.13 f
+  o_product[0] (out)                       0.00       0.13 f
+  data arrival time                                   0.13
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  output external delay                   -0.01       0.66
+  data required time                                  0.66
+  -----------------------------------------------------------
+  data required time                                  0.66
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.52
+
+
+  Startpoint: i_multa[0] (input port clocked by i_clk)
+  Endpoint: multb_reg_0_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  i_multa[0] (in)                0.00      0.00       0.01 f
+  U426/ZN (CLKNHDV0)             0.00      0.01       0.02 r
+  multb_reg_0_/D (DSNHDV4)                 0.00       0.02 r
+  data arrival time                                   0.02
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_0_/CK (DSNHDV4)                0.00       0.67 r
+  library setup time                      -0.05       0.62
+  data required time                                  0.62
+  -----------------------------------------------------------
+  data required time                                  0.62
+  data arrival time                                  -0.02
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[12]
+              (input port clocked by i_clk)
+  Endpoint: multa_reg_12_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  i_multa[12] (in)               0.00      0.00       0.01 f
+  U374/ZN (CLKNHDV0)             0.00      0.01       0.02 r
+  multa_reg_12_/D (DSNHDV4)                0.00       0.02 r
+  data arrival time                                   0.02
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_12_/CK (DSNHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.62
+  data required time                                  0.62
+  -----------------------------------------------------------
+  data required time                                  0.62
+  data arrival time                                  -0.02
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[7] (input port clocked by i_clk)
+  Endpoint: multa_reg_7_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[7] (in)                0.00      0.00       0.01 r
+  multa_reg_7_/D (DRNHDV4)                 0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_7_/CK (DRNHDV4)                0.00       0.67 r
+  library setup time                      -0.06       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[16]
+              (input port clocked by i_clk)
+  Endpoint: multa_reg_16_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[16] (in)               0.00      0.00       0.01 r
+  multa_reg_16_/D (DRNQHDV2)               0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_16_/CK (DRNQHDV2)              0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[16]
+              (input port clocked by i_clk)
+  Endpoint: multb_reg_16_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[16] (in)               0.00      0.00       0.01 r
+  multb_reg_16_/D (DRNQHDV4)               0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_16_/CK (DRNQHDV4)              0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[11]
+              (input port clocked by i_clk)
+  Endpoint: multb_reg_11_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[11] (in)               0.00      0.00       0.01 r
+  multb_reg_11_/D (DRNQHDV4)               0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_11_/CK (DRNQHDV4)              0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[12]
+              (input port clocked by i_clk)
+  Endpoint: multb_reg_12_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[12] (in)               0.00      0.00       0.01 r
+  multb_reg_12_/D (DRNQHDV4)               0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_12_/CK (DRNQHDV4)              0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[14]
+              (input port clocked by i_clk)
+  Endpoint: multb_reg_14_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[14] (in)               0.00      0.00       0.01 r
+  multb_reg_14_/D (DRNQHDV4)               0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_14_/CK (DRNQHDV4)              0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[7] (input port clocked by i_clk)
+  Endpoint: multb_reg_7_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[7] (in)                0.00      0.00       0.01 r
+  multb_reg_7_/D (DRNQHDV4)                0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_7_/CK (DRNQHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[13]
+              (input port clocked by i_clk)
+  Endpoint: multb_reg_13_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[13] (in)               0.00      0.00       0.01 r
+  multb_reg_13_/D (DRNQHDV4)               0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_13_/CK (DRNQHDV4)              0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[17]
+              (input port clocked by i_clk)
+  Endpoint: multb_reg_17_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[17] (in)               0.00      0.00       0.01 r
+  multb_reg_17_/D (DRNQHDV4)               0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_17_/CK (DRNQHDV4)              0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[8] (input port clocked by i_clk)
+  Endpoint: multb_reg_8_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[8] (in)                0.00      0.00       0.01 r
+  multb_reg_8_/D (DRNQHDV4)                0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_8_/CK (DRNQHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[4] (input port clocked by i_clk)
+  Endpoint: multb_reg_4_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[4] (in)                0.00      0.00       0.01 r
+  multb_reg_4_/D (DRNQHDV4)                0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_4_/CK (DRNQHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[10]
+              (input port clocked by i_clk)
+  Endpoint: multb_reg_10_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[10] (in)               0.00      0.00       0.01 r
+  multb_reg_10_/D (DRNQHDV4)               0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_10_/CK (DRNQHDV4)              0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[15]
+              (input port clocked by i_clk)
+  Endpoint: multb_reg_15_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[15] (in)               0.00      0.00       0.01 r
+  multb_reg_15_/D (DRNQHDV4)               0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_15_/CK (DRNQHDV4)              0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[9] (input port clocked by i_clk)
+  Endpoint: multb_reg_9_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[9] (in)                0.00      0.00       0.01 r
+  multb_reg_9_/D (DRNQHDV4)                0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_9_/CK (DRNQHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[5] (input port clocked by i_clk)
+  Endpoint: multb_reg_5_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[5] (in)                0.00      0.00       0.01 r
+  multb_reg_5_/D (DRNQHDV4)                0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_5_/CK (DRNQHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[15]
+              (input port clocked by i_clk)
+  Endpoint: multa_reg_15_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[15] (in)               0.00      0.00       0.01 r
+  multa_reg_15_/D (DRNQHDV4)               0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_15_/CK (DRNQHDV4)              0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[9] (input port clocked by i_clk)
+  Endpoint: multa_reg_9_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[9] (in)                0.00      0.00       0.01 r
+  multa_reg_9_/D (DRNQHDV4)                0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_9_/CK (DRNQHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[6] (input port clocked by i_clk)
+  Endpoint: multb_reg_6_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[6] (in)                0.00      0.00       0.01 r
+  multb_reg_6_/D (DRNQHDV4)                0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_6_/CK (DRNQHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[3] (input port clocked by i_clk)
+  Endpoint: multb_reg_3_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[3] (in)                0.00      0.00       0.01 r
+  multb_reg_3_/D (DRNQHDV4)                0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_3_/CK (DRNQHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[11]
+              (input port clocked by i_clk)
+  Endpoint: multa_reg_11_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[11] (in)               0.00      0.00       0.01 r
+  multa_reg_11_/D (DRNQHDV4)               0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_11_/CK (DRNQHDV4)              0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[17]
+              (input port clocked by i_clk)
+  Endpoint: multa_reg_17_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[17] (in)               0.00      0.00       0.01 r
+  multa_reg_17_/D (DRNQHDV4)               0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_17_/CK (DRNQHDV4)              0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[8] (input port clocked by i_clk)
+  Endpoint: multa_reg_8_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[8] (in)                0.00      0.00       0.01 r
+  multa_reg_8_/D (DRNQHDV4)                0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_8_/CK (DRNQHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[14]
+              (input port clocked by i_clk)
+  Endpoint: multa_reg_14_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[14] (in)               0.00      0.00       0.01 r
+  multa_reg_14_/D (DRNQHDV4)               0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_14_/CK (DRNQHDV4)              0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[2] (input port clocked by i_clk)
+  Endpoint: multa_reg_2_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[2] (in)                0.00      0.00       0.01 r
+  multa_reg_2_/D (DRNQHDV4)                0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_2_/CK (DRNQHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[2] (input port clocked by i_clk)
+  Endpoint: multb_reg_2_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[2] (in)                0.00      0.00       0.01 r
+  multb_reg_2_/D (DRNQHDV4)                0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_2_/CK (DRNQHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[1] (input port clocked by i_clk)
+  Endpoint: multb_reg_1_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[1] (in)                0.00      0.00       0.01 r
+  multb_reg_1_/D (DRNQHDV4)                0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multb_reg_1_/CK (DRNQHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[0] (input port clocked by i_clk)
+  Endpoint: multa_reg_0_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[0] (in)                0.00      0.00       0.01 r
+  multa_reg_0_/D (DRNQHDV4)                0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_0_/CK (DRNQHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[3] (input port clocked by i_clk)
+  Endpoint: multa_reg_3_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[3] (in)                0.00      0.00       0.01 r
+  multa_reg_3_/D (DRNQHDV4)                0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_3_/CK (DRNQHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[4] (input port clocked by i_clk)
+  Endpoint: multa_reg_4_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[4] (in)                0.00      0.00       0.01 r
+  multa_reg_4_/D (DRNQHDV4)                0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_4_/CK (DRNQHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[5] (input port clocked by i_clk)
+  Endpoint: multa_reg_5_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[5] (in)                0.00      0.00       0.01 r
+  multa_reg_5_/D (DRNQHDV4)                0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_5_/CK (DRNQHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[6] (input port clocked by i_clk)
+  Endpoint: multa_reg_6_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[6] (in)                0.00      0.00       0.01 r
+  multa_reg_6_/D (DRNQHDV4)                0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_6_/CK (DRNQHDV4)               0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[10]
+              (input port clocked by i_clk)
+  Endpoint: multa_reg_10_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[10] (in)               0.00      0.00       0.01 r
+  multa_reg_10_/D (DRNQHDV4)               0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_10_/CK (DRNQHDV4)              0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[13]
+              (input port clocked by i_clk)
+  Endpoint: multa_reg_13_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[13] (in)               0.00      0.00       0.01 r
+  multa_reg_13_/D (DRNQHDV4)               0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_13_/CK (DRNQHDV4)              0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: i_multa[1] (input port clocked by i_clk)
+  Endpoint: multa_reg_1_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  i_multa[1] (in)                0.00      0.00       0.01 r
+  multa_reg_1_/D (DRNHDV2)                 0.00       0.01 r
+  data arrival time                                   0.01
+
+  clock i_clk (rise edge)                  0.67       0.67
+  clock network delay (ideal)              0.00       0.67
+  multa_reg_1_/CK (DRNHDV2)                0.00       0.67 r
+  library setup time                      -0.05       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+1

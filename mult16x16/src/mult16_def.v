@@ -7,7 +7,7 @@
 *  Purpose     :
 *
 *****************************************************/
-//`define COMP_3TO2
+`define COMP_3TO2
 
 `define MULT16_PIPE_PPN
 `define MULT16_PIPE_STG1

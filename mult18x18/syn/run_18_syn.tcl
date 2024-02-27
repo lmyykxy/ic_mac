@@ -17,7 +17,7 @@ analyze -format verilog -define { } { half_adder.v \
 				      wrap.v }
 elaborate wrap
 link
-create_clock -period 0.666 i_clk
+create_clock -period 0.1 i_clk
 set_input_delay -clock i_clk -max 0.01 { i_multa_ns i_multb_ns i_multa i_multb }
 set_input_delay -clock i_clk -min 0.01 { i_multa_ns i_multb_ns i_multa i_multb }
 set_output_delay -clock i_clk -max 0.01 { o_product }

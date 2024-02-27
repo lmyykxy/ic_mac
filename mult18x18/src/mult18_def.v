@@ -4,4 +4,3 @@
 `define MULT16_PIPE_STG3
 `define MULT16_PIPE_STG4
 `define MULT16_PIPE_STG5
-

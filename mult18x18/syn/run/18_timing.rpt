@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : wrap
+Version: R-2020.09-SP4
+Date   : Sun Feb 25 02:56:06 2024
+****************************************
+
+Operating Conditions: tt_v1p2_25c   Library: scc55nll_hd_rvt_tt_v1p2_25c_basic
+Wire Load Model Mode: top
+
+  Startpoint: multa_reg_2_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U_MULT_TOP_U_WALLACE_TREE_pp3_ff_reg_4_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  multa_reg_2_/CK (DRNQHDV2)                              0.00       0.00 r
+  multa_reg_2_/Q (DRNQHDV2)                               0.13       0.13 r
+  U2684/Z (BUFHDV8)                                       0.06       0.19 r
+  U1672/ZN (INHDV4)                                       0.03       0.22 f
+  U2642/ZN (NAND2HDV2)                                    0.03       0.25 r
+  U1670/ZN (INHDV1)                                       0.02       0.27 f
+  U3097/ZN (OAI21HDV2)                                    0.18       0.45 r
+  U3114/ZN (OAI22HDV0)                                    0.08       0.53 f
+  U2131/ZN (AOI21HDV0)                                    0.06       0.59 r
+  U3116/ZN (OAI21HDV2)                                    0.04       0.62 f
+  U_MULT_TOP_U_WALLACE_TREE_pp3_ff_reg_4_/D (DRNQHDV0)
+                                                          0.00       0.62 f
+  data arrival time                                                  0.62
+
+  clock i_clk (rise edge)                                 0.67       0.67
+  clock network delay (ideal)                             0.00       0.67
+  U_MULT_TOP_U_WALLACE_TREE_pp3_ff_reg_4_/CK (DRNQHDV0)
+                                                          0.00       0.67 r
+  library setup time                                     -0.04       0.62
+  data required time                                                 0.62
+  --------------------------------------------------------------------------
+  data required time                                                 0.62
+  data arrival time                                                 -0.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
