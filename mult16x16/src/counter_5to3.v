@@ -1,12 +1,3 @@
-/*****************************************************
-*  
-*  Filename    : counter_5to3.v
-*  Author      : lucky_yuhua@aliyun.com
-*  Create Date : 2020-03-10
-*  Last Modify : 2020-03-10
-*  Purpose     :
-*
-*****************************************************/
 module counter_5to3 (
   input   wire  i0,
   input   wire  i1, 

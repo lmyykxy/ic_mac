@@ -1,12 +1,3 @@
-/*****************************************************
-*  
-*  Filename    : testbench.v
-*  Author      : lucky_yuhua@aliyun.com
-*  Create Date : 2019-07-29
-*  Last Modify : 2019-07-29
-*  Purpose     : testbench for multiplier 16x16
-*
-*****************************************************/
 `timescale 1ns/1ps
 
 module testbench;

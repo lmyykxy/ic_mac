@@ -1,13 +1,3 @@
-/*****************************************************
-*  
-*  Filename    : booth_r4_16x16.v
-*  Author      : lucky_yuhua@aliyun.com
-*  Create Date : 2019-07-30
-*  Last Modify : 2019-07-30
-*  Purpose     : Booth Radix-4 algorithm, for 16bx16b
-*
-*****************************************************/
-
 `timescale 1ns/1ps
 
 module booth_r4_16x16 
