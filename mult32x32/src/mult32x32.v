@@ -12,7 +12,7 @@ module mult32x32 (
 
 // internal connection
 // partical product
-wire [33:0] pp1, pp2, pp3, pp4, pp5, pp6, pp7, pp8, pp9, pp10;
+wire [33:0] pp1, pp2, pp3, pp4, pp5, pp6, pp7, pp8, pp9, pp10, pp11, pp12, pp13, pp14, pp15, pp16, pp17;
 wire [63:0] final_p;
 
 booth_r4_32x32 U_BOOTH_R4_32X32(
@@ -29,7 +29,14 @@ booth_r4_32x32 U_BOOTH_R4_32X32(
   .o_pp7       (pp7       ),
   .o_pp8       (pp8       ),
   .o_pp9       (pp9       ),
-  .o_pp10      (pp10      )
+  .o_pp10      (pp10      ),
+  .o_pp11      (pp11      ),
+  .o_pp12      (pp12      ),
+  .o_pp13      (pp13      ),
+  .o_pp14      (pp14      ),
+  .o_pp15      (pp15      ),
+  .o_pp16      (pp16      ),
+  .o_pp17      (pp17      )
 );
 
 wtree_3to2_32x32 U_WALLACE_TREE(
@@ -45,6 +52,13 @@ wtree_3to2_32x32 U_WALLACE_TREE(
   .pp8         (pp8        ),
   .pp9         (pp9        ),
   .pp10        (pp10       ),
+  .pp11        (pp11       ),
+  .pp12        (pp12       ),
+  .pp13        (pp13       ),
+  .pp14        (pp14       ),
+  .pp15        (pp15       ),
+  .pp16        (pp16       ),
+  .pp17        (pp17       ),
   .final_p     (final_p    )
 );
 

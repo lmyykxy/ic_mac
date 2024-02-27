@@ -28,7 +28,7 @@ wire [19:0] pp8_w;
 wire [19:0] pp9_w; 
 wire [17:0] pp10_w;
 // ================ if necessary, pipeline pp1~pp9 here for timing ===============
-`ifdef MULT16_PIPE_PPN
+`ifdef MULT18_PIPE_PPN
 reg  [19:0] pp1_ff;
 reg  [19:0] pp2_ff;
 reg  [19:0] pp3_ff;
@@ -174,7 +174,7 @@ wire [23:0] stg1_s1_w, stg1_c1_w;
 wire [23:0] stg1_s2_w, stg1_c2_w;
 wire [23:0] stg1_s3_w, stg1_c3_w;
 //================ if necessary, pipeline stg1_s* and stg1_c* here for timing ================
-`ifdef MULT16_PIPE_STG1
+`ifdef MULT18_PIPE_STG1
 reg [23:0] stg1_s1_ff, stg1_c1_ff;
 reg [23:0] stg1_s2_ff, stg1_c2_ff;
 reg [23:0] stg1_s3_ff, stg1_c3_ff;
@@ -279,7 +279,7 @@ full_adder u_a22_28(.a(stg1_c2_w[23]), .b(stg1_s3_w[23]), .ci(stg1_c3_w[22]), .s
 wire [29:0] stg2_s1_w, stg2_c1_w;
 wire [28:0] stg2_s2_w, stg2_c2_w;
 //================ if necessary, pipeline stg2_s* and stg2_c* here for timing ================
-`ifdef MULT16_PIPE_STG2
+`ifdef MULT18_PIPE_STG2
 reg [29:0] stg2_s1_ff, stg2_c1_ff;
 reg [28:0] stg2_s2_ff, stg2_c2_ff;
 
@@ -354,7 +354,7 @@ wire [35:0] stg3_s1_w, stg3_c1_w;
 wire [28:0] stg2_c2_w2;
 //================ if necessary, pipeline stg3_s* and stg3_c* here for timing ================
 //in the next stage
-`ifdef MULT16_PIPE_STG3
+`ifdef MULT18_PIPE_STG3
 reg [35:0] stg3_s1_ff, stg3_c1_ff;
 reg [27:0] stg2_c2_ff2;
 
@@ -423,7 +423,7 @@ full_adder u_a41_35(.a(stg3_s1_w[35]), .b(stg3_c1_w[34]), .ci(stg2_c2_w2[27]), .
 wire [35:0] stg4_s1_w, stg4_c1_w;
 wire [17:0] pp10_w2;
 //================ if necessary, pipeline stg4_s* and stg4_c* here for timing ================
-`ifdef MULT16_PIPE_STG4
+`ifdef MULT18_PIPE_STG4
 reg [35:0] stg4_s1_ff, stg4_c1_ff;
 reg [17:0] pp10_ff2;
 
@@ -491,7 +491,7 @@ full_adder u_a51_35(.a(stg4_s1_w[35]), .b(stg4_c1_w[34]), .ci(pp10_w2[17]),    .
 
 wire [35:0] stg5_s1_w, stg5_c1_w;
 //================ if necessary, pipeline stg4_s* and stg4_c* here for timing ================
-`ifdef MULT16_PIPE_STG4
+`ifdef MULT18_PIPE_STG5
 reg [35:0] stg5_s1_ff, stg5_c1_ff;
 
 always @(posedge clk or negedge rstn) begin
@@ -516,7 +516,7 @@ wire [35:0] stg6_s;
 assign stg6_s = stg5_s1_w + {stg5_c1_w[34:0], 1'b0};  
 
 //================ if necessary, pipeline stg5_s here for timing ================
-`ifdef MULT16_PIPE_STG5
+`ifdef MULT18_PIPE_STG6
 reg [35:0] stg6_s_ff;
 always @(posedge clk or negedge rstn) begin
   if(~rstn)
