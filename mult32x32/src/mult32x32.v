@@ -1,12 +1,12 @@
 `timescale 1ns/1ps
 
 module mult32x32 (
-    input              i_clk     ,
+	input              i_clk     ,
 	input              i_rstn    ,
 	input  wire        i_multa_ns,     // 0-multa is usigned, 1-multa is signed
 	input  wire        i_multb_ns,     // 0-multb is usigned, 1-multb is signed
-    input  wire [31:0] i_multa   ,     // Multiplicand 
-    input  wire [31:0] i_multb   ,     // Multiplier
+	input  wire [31:0] i_multa   ,     // Multiplicand 
+	input  wire [31:0] i_multb   ,     // Multiplier
 	output wire [63:0] o_product
 );
 

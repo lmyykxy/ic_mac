@@ -2,27 +2,27 @@
 
 module booth_r4_32x32 
 (
-  input  wire        i_multa_ns, // 0-multa is unsigned, 1-multa is signed
-  input  wire        i_multb_ns, // 0-multb is unsigned, 1-multb is signed
-  input  wire [31:0] i_multa   , // Multiplicand
-  input  wire [31:0] i_multb   , // Multipler
-  output wire [33:0] o_pp1     , // partial products
-  output wire [33:0] o_pp2     ,
-  output wire [33:0] o_pp3     ,
-  output wire [33:0] o_pp4     ,
-  output wire [33:0] o_pp5     ,
-  output wire [33:0] o_pp6     ,
-  output wire [33:0] o_pp7     ,
-  output wire [33:0] o_pp8     ,
-  output wire [33:0] o_pp9 	   ,
-  output wire [33:0] o_pp10	   ,
-  output wire [33:0] o_pp11	   ,
-  output wire [33:0] o_pp12	   ,
-  output wire [33:0] o_pp13	   ,
-  output wire [33:0] o_pp14	   ,
-  output wire [33:0] o_pp15	   ,
-  output wire [33:0] o_pp16	   ,
-  output wire [33:0] o_pp17	   
+	input  wire        i_multa_ns, // 0-multa is unsigned, 1-multa is signed
+	input  wire        i_multb_ns, // 0-multb is unsigned, 1-multb is signed
+	input  wire [31:0] i_multa   , // Multiplicand
+	input  wire [31:0] i_multb   , // Multipler
+	output wire [33:0] o_pp1     , // partial products
+	output wire [33:0] o_pp2     ,
+	output wire [33:0] o_pp3     ,
+	output wire [33:0] o_pp4     ,
+	output wire [33:0] o_pp5     ,
+	output wire [33:0] o_pp6     ,
+	output wire [33:0] o_pp7     ,
+	output wire [33:0] o_pp8     ,
+	output wire [33:0] o_pp9 	   ,
+	output wire [33:0] o_pp10	   ,
+	output wire [33:0] o_pp11	   ,
+	output wire [33:0] o_pp12	   ,
+	output wire [33:0] o_pp13	   ,
+	output wire [33:0] o_pp14	   ,
+	output wire [33:0] o_pp15	   ,
+	output wire [33:0] o_pp16	   ,
+	output wire [33:0] o_pp17	   
 );
 
 // sign bit extend, for unsigned operator extended by 0, for signed operator extended by orignal sign bit

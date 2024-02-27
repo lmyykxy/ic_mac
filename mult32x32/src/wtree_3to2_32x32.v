@@ -2,26 +2,26 @@
 
 `include "mult32_def.v"
 module wtree_3to2_32x32(
-  input    wire        clk    ,
-  input    wire        rstn   ,
-  input    wire [19:0] pp1    , 
-  input    wire [19:0] pp2    , 
-  input    wire [19:0] pp3    , 
-  input    wire [19:0] pp4    , 
-  input    wire [19:0] pp5    , 
-  input    wire [19:0] pp6    , 
-  input    wire [19:0] pp7    , 
-  input    wire [19:0] pp8    , 
-  input    wire [19:0] pp9    , 
-  input    wire [19:0] pp10   , 
-  input    wire [19:0] pp11   , 
-  input    wire [19:0] pp12   , 
-  input    wire [19:0] pp13   , 
-  input    wire [19:0] pp14   , 
-  input    wire [19:0] pp15   , 
-  input    wire [19:0] pp16   , 
-  input    wire [19:0] pp17   , 
-  output   wire [35:0] final_p
+	input    wire        clk    ,
+	input    wire        rstn   ,
+	input    wire [19:0] pp1    , 
+	input    wire [19:0] pp2    , 
+	input    wire [19:0] pp3    , 
+	input    wire [19:0] pp4    , 
+	input    wire [19:0] pp5    , 
+	input    wire [19:0] pp6    , 
+	input    wire [19:0] pp7    , 
+	input    wire [19:0] pp8    , 
+	input    wire [19:0] pp9    , 
+	input    wire [19:0] pp10   , 
+	input    wire [19:0] pp11   , 
+	input    wire [19:0] pp12   , 
+	input    wire [19:0] pp13   , 
+	input    wire [19:0] pp14   , 
+	input    wire [19:0] pp15   , 
+	input    wire [19:0] pp16   , 
+	input    wire [19:0] pp17   , 
+	output   wire [35:0] final_p
 );
 
 wire [19:0] pp1_w;
