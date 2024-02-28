@@ -351,7 +351,7 @@ full_adder u_a31_34(.a(stg2_s1_w[29]), .b(stg2_c1_w[29]), .ci(stg2_s2_w[27]), .s
 full_adder u_a31_35(.a(stg2_s1_w[29]), .b(stg2_c1_w[29]), .ci(stg2_s2_w[28]), .s(stg3_s1[35]), .co(stg3_c1[35]));
 
 wire [35:0] stg3_s1_w, stg3_c1_w;
-wire [28:0] stg2_c2_w2;
+wire [27:0] stg2_c2_w2;
 //================ if necessary, pipeline stg3_s* and stg3_c* here for timing ================
 //in the next stage
 `ifdef MULT18_PIPE_STG3
