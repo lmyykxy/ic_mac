@@ -2,17 +2,31 @@
 ****************************************
 check_design summary:
 Version:     R-2020.09-SP4
-Date:        Tue Feb 27 08:28:45 2024
+Date:        Wed Feb 28 20:13:23 2024
 ****************************************
 
                    Name                                            Total
 --------------------------------------------------------------------------------
-Inputs/Outputs                                                     20
-    Unconnected ports (LINT-28)                                    20
+Inputs/Outputs                                                     34
+    Unconnected ports (LINT-28)                                    34
 --------------------------------------------------------------------------------
 
 Warning: In design 'wrap', port 'i_multa_ns' is not connected to any nets. (LINT-28)
 Warning: In design 'wrap', port 'i_multb_ns' is not connected to any nets. (LINT-28)
+Warning: In design 'wrap', port 'i_multb[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'wrap', port 'i_multb[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'wrap', port 'i_multb[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'wrap', port 'i_multb[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'wrap', port 'i_multb[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'wrap', port 'i_multb[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'wrap', port 'i_multb[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'wrap', port 'i_multb[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'wrap', port 'i_multb[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'wrap', port 'i_multb[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'wrap', port 'i_multb[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'wrap', port 'i_multb[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'wrap', port 'i_multb[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'wrap', port 'i_multb[18]' is not connected to any nets. (LINT-28)
 Warning: In design 'wrap', port 'i_multb[17]' is not connected to any nets. (LINT-28)
 Warning: In design 'wrap', port 'i_multb[16]' is not connected to any nets. (LINT-28)
 Warning: In design 'wrap', port 'i_multb[15]' is not connected to any nets. (LINT-28)

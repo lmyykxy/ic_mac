@@ -1,0 +1,7 @@
+/usr/Synopsys/syn/R-2020.09-SP4/dw/sim_ver/DW02_mult_6_stage.v
+../src/full_adder.v
+../src/half_adder.v
+../src/booth_r4_18x18.v
+../src/wtree_3to2_18x18.v
+../src/mult18x18.v
+../src/testbench.v

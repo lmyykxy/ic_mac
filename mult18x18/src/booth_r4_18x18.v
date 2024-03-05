@@ -43,7 +43,7 @@ generate
                      (y[i+2:i] == 3'b101 || y[i+2:i] == 3'b110) ? x_c   :
         	     	 (y[i+2:i] == 3'b011                      ) ? xm2   :
         	     	 (y[i+2:i] == 3'b100                      ) ? x_cm2 : 
-					 18'b0;
+					 20'b0;
   end
 endgenerate
 

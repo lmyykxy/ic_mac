@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : wrap
+Version: R-2020.09-SP4
+Date   : Wed Feb 28 20:09:07 2024
+****************************************
+
+Library(s) Used:
+
+    scc55nll_hd_rvt_tt_v1p2_25c_basic (File: /home/autumn/Desktop/ic_mac/mult32x32/syn/scc55nll_hd_rvt_tt_v1p2_25c_basic.db)
+
+Number of ports:                          132
+Number of nets:                          8649
+Number of cells:                         8607
+Number of combinational cells:           6259
+Number of sequential cells:              2347
+Number of macros/black boxes:               0
+Number of buf/inv:                        754
+Number of references:                      95
+
+Combinational area:               9223.479930
+Buf/Inv area:                      677.879983
+Noncombinational area:           15781.359515
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 25004.839445
+Total area:                 undefined
+1

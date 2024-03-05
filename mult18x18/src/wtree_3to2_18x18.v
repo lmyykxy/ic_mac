@@ -173,11 +173,13 @@ full_adder u_a13_23(.a(pp7_w[19]), .b(pp8_w[19]), .ci(pp9_w[19]), .s(stg1_s3[23]
 wire [23:0] stg1_s1_w, stg1_c1_w;
 wire [23:0] stg1_s2_w, stg1_c2_w;
 wire [23:0] stg1_s3_w, stg1_c3_w;
+wire [17:0] pp10_w2;
 //================ if necessary, pipeline stg1_s* and stg1_c* here for timing ================
 `ifdef MULT18_PIPE_STG1
 reg [23:0] stg1_s1_ff, stg1_c1_ff;
 reg [23:0] stg1_s2_ff, stg1_c2_ff;
 reg [23:0] stg1_s3_ff, stg1_c3_ff;
+reg [17:0] pp10_ff2;
 
 always @(posedge clk or negedge rstn) begin
   if(~rstn) begin
@@ -187,6 +189,7 @@ always @(posedge clk or negedge rstn) begin
     stg1_c2_ff <= 24'b0;
     stg1_s3_ff <= 24'b0;
     stg1_c3_ff <= 24'b0;
+	pp10_ff2 <= 18'd0;
   end
   else begin
     stg1_s1_ff <= stg1_s1;
@@ -195,6 +198,7 @@ always @(posedge clk or negedge rstn) begin
     stg1_c2_ff <= stg1_c2;
     stg1_s3_ff <= stg1_s3;
     stg1_c3_ff <= stg1_c3;
+	pp10_ff2 <= pp10_w;
   end
 end
 assign stg1_s1_w = stg1_s1_ff;
@@ -203,6 +207,7 @@ assign stg1_s2_w = stg1_s2_ff;
 assign stg1_c2_w = stg1_c2_ff;
 assign stg1_s3_w = stg1_s3_ff;
 assign stg1_c3_w = stg1_c3_ff;
+assign pp10_w2 = pp10_ff2;
 `else
 assign stg1_s1_w = stg1_s1;
 assign stg1_c1_w = stg1_c1;
@@ -210,6 +215,7 @@ assign stg1_s2_w = stg1_s2;
 assign stg1_c2_w = stg1_c2;
 assign stg1_s3_w = stg1_s3;
 assign stg1_c3_w = stg1_c3;
+assign pp10_w2 = pp10_w;
 `endif
 
 //================ second stage ================
@@ -278,10 +284,12 @@ full_adder u_a22_28(.a(stg1_c2_w[23]), .b(stg1_s3_w[23]), .ci(stg1_c3_w[22]), .s
 
 wire [29:0] stg2_s1_w, stg2_c1_w;
 wire [28:0] stg2_s2_w, stg2_c2_w;
+wire [17:0] pp10_w3;
 //================ if necessary, pipeline stg2_s* and stg2_c* here for timing ================
 `ifdef MULT18_PIPE_STG2
 reg [29:0] stg2_s1_ff, stg2_c1_ff;
 reg [28:0] stg2_s2_ff, stg2_c2_ff;
+reg [17:0] pp10_ff3;
 
 always @(posedge clk or negedge rstn) begin
   if(~rstn) begin
@@ -289,23 +297,27 @@ always @(posedge clk or negedge rstn) begin
     stg2_c1_ff <= 30'b0;
     stg2_s2_ff <= 29'b0;
     stg2_c2_ff <= 29'b0;
+	pp10_ff3 <= 18'd0;
   end
   else begin
     stg2_s1_ff <= stg2_s1;
     stg2_c1_ff <= stg2_c1;
     stg2_s2_ff <= stg2_s2;
     stg2_c2_ff <= stg2_c2;
+	pp10_ff3 <= pp10_w2;
   end
 end
 assign stg2_s1_w = stg2_s1_ff;
 assign stg2_c1_w = stg2_c1_ff;
 assign stg2_s2_w = stg2_s2_ff;
 assign stg2_c2_w = stg2_c2_ff;
+assign pp10_w3 = pp10_ff3;
 `else
 assign stg2_s1_w = stg2_s1;
 assign stg2_c1_w = stg2_c1;
 assign stg2_s2_w = stg2_s2;
 assign stg2_c2_w = stg2_c2;
+assign pp10_w3 = pp10_w2;
 `endif
 
 //================ third stage ================
@@ -352,31 +364,37 @@ full_adder u_a31_35(.a(stg2_s1_w[29]), .b(stg2_c1_w[29]), .ci(stg2_s2_w[28]), .s
 
 wire [35:0] stg3_s1_w, stg3_c1_w;
 wire [27:0] stg2_c2_w2;
+wire [17:0] pp10_w4;
 //================ if necessary, pipeline stg3_s* and stg3_c* here for timing ================
 //in the next stage
 `ifdef MULT18_PIPE_STG3
 reg [35:0] stg3_s1_ff, stg3_c1_ff;
 reg [27:0] stg2_c2_ff2;
+reg [17:0] pp10_ff4;
 
 always @(posedge clk or negedge rstn) begin
   if(~rstn) begin
     stg3_s1_ff  <= 36'b0;
     stg3_c1_ff  <= 36'b0;
     stg2_c2_ff2 <= 28'b0;
+	pp10_ff4 <= 18'd0;
   end
   else begin
     stg3_s1_ff  <= stg3_s1         ;
     stg3_c1_ff  <= stg3_c1         ;
     stg2_c2_ff2 <= stg2_c2_w[27:0] ;
+	pp10_ff4 <= pp10_w3;
   end
 end
 assign stg3_s1_w  = stg3_s1_ff ;
 assign stg3_c1_w  = stg3_c1_ff ;
 assign stg2_c2_w2 = stg2_c2_ff2;
+assign pp10_w4 = pp10_ff4;
 `else
 assign stg3_s1_w  = stg3_s1;
 assign stg3_c1_w  = stg3_c1;
 assign stg2_c2_w2 = stg2_c2_w[27:0];
+assign pp10_w4 = pp10_w3;
 `endif
 
 //================ forth stage ===============
@@ -421,31 +439,31 @@ full_adder u_a41_34(.a(stg3_s1_w[34]), .b(stg3_c1_w[33]), .ci(stg2_c2_w2[26]), .
 full_adder u_a41_35(.a(stg3_s1_w[35]), .b(stg3_c1_w[34]), .ci(stg2_c2_w2[27]), .s(stg4_s1[35]), .co(stg4_c1[35]));
 
 wire [35:0] stg4_s1_w, stg4_c1_w;
-wire [17:0] pp10_w2;
+wire [17:0] pp10_w5;
 //================ if necessary, pipeline stg4_s* and stg4_c* here for timing ================
 `ifdef MULT18_PIPE_STG4
 reg [35:0] stg4_s1_ff, stg4_c1_ff;
-reg [17:0] pp10_ff2;
+reg [17:0] pp10_ff5;
 
 always @(posedge clk or negedge rstn) begin
   if(~rstn) begin
     stg4_s1_ff <= 36'b0;
     stg4_c1_ff <= 36'b0;
-	pp10_ff2   <= 18'b0;
+	pp10_ff5   <= 18'b0;
   end
   else begin
     stg4_s1_ff <= stg4_s1;
     stg4_c1_ff <= stg4_c1;
-	pp10_ff2   <= pp10_ff;
+	pp10_ff5   <= pp10_ff4;
   end
 end
 assign stg4_s1_w = stg4_s1_ff;
 assign stg4_c1_w = stg4_c1_ff;
-assign pp10_w2   = pp10_ff2;
+assign pp10_w5   = pp10_ff5;
 `else
 assign stg4_s1_w = stg4_s1;
 assign stg4_c1_w = stg4_c1;
-assign pp10_w2   = pp10_w;
+assign pp10_w5   = pp10_w4;
 `endif
 
 //================ fifth stage ===============
@@ -470,24 +488,24 @@ half_adder u_a51_14 (.a(stg4_s1_w[14]), .b(stg4_c1_w[13]),                      
 half_adder u_a51_15 (.a(stg4_s1_w[15]), .b(stg4_c1_w[14]),                      .s(stg5_s1[15]), .co(stg5_c1[15]));
 half_adder u_a51_16 (.a(stg4_s1_w[16]), .b(stg4_c1_w[15]),                      .s(stg5_s1[16]), .co(stg5_c1[16]));
 half_adder u_a51_17 (.a(stg4_s1_w[17]), .b(stg4_c1_w[16]),                      .s(stg5_s1[17]), .co(stg5_c1[17]));
-full_adder u_a51_18(.a(stg4_s1_w[18]), .b(stg4_c1_w[17]), .ci(pp10_w2[ 0]),    .s(stg5_s1[18]), .co(stg5_c1[18]));
-full_adder u_a51_19(.a(stg4_s1_w[19]), .b(stg4_c1_w[18]), .ci(pp10_w2[ 1]),    .s(stg5_s1[19]), .co(stg5_c1[19]));
-full_adder u_a51_20(.a(stg4_s1_w[20]), .b(stg4_c1_w[19]), .ci(pp10_w2[ 2]),    .s(stg5_s1[20]), .co(stg5_c1[20]));
-full_adder u_a51_21(.a(stg4_s1_w[21]), .b(stg4_c1_w[20]), .ci(pp10_w2[ 3]),    .s(stg5_s1[21]), .co(stg5_c1[21]));
-full_adder u_a51_22(.a(stg4_s1_w[22]), .b(stg4_c1_w[21]), .ci(pp10_w2[ 4]),    .s(stg5_s1[22]), .co(stg5_c1[22]));
-full_adder u_a51_23(.a(stg4_s1_w[23]), .b(stg4_c1_w[22]), .ci(pp10_w2[ 5]),    .s(stg5_s1[23]), .co(stg5_c1[23]));
-full_adder u_a51_24(.a(stg4_s1_w[24]), .b(stg4_c1_w[23]), .ci(pp10_w2[ 6]),    .s(stg5_s1[24]), .co(stg5_c1[24]));
-full_adder u_a51_25(.a(stg4_s1_w[25]), .b(stg4_c1_w[24]), .ci(pp10_w2[ 7]),    .s(stg5_s1[25]), .co(stg5_c1[25]));
-full_adder u_a51_26(.a(stg4_s1_w[26]), .b(stg4_c1_w[25]), .ci(pp10_w2[ 8]),    .s(stg5_s1[26]), .co(stg5_c1[26]));
-full_adder u_a51_27(.a(stg4_s1_w[27]), .b(stg4_c1_w[26]), .ci(pp10_w2[ 9]),    .s(stg5_s1[27]), .co(stg5_c1[27]));
-full_adder u_a51_28(.a(stg4_s1_w[28]), .b(stg4_c1_w[27]), .ci(pp10_w2[10]),    .s(stg5_s1[28]), .co(stg5_c1[28]));
-full_adder u_a51_29(.a(stg4_s1_w[29]), .b(stg4_c1_w[28]), .ci(pp10_w2[11]),    .s(stg5_s1[29]), .co(stg5_c1[29]));
-full_adder u_a51_30(.a(stg4_s1_w[30]), .b(stg4_c1_w[29]), .ci(pp10_w2[12]),    .s(stg5_s1[30]), .co(stg5_c1[30]));
-full_adder u_a51_31(.a(stg4_s1_w[31]), .b(stg4_c1_w[30]), .ci(pp10_w2[13]),    .s(stg5_s1[31]), .co(stg5_c1[31]));
-full_adder u_a51_32(.a(stg4_s1_w[32]), .b(stg4_c1_w[31]), .ci(pp10_w2[14]),    .s(stg5_s1[32]), .co(stg5_c1[32]));
-full_adder u_a51_33(.a(stg4_s1_w[33]), .b(stg4_c1_w[32]), .ci(pp10_w2[15]),    .s(stg5_s1[33]), .co(stg5_c1[33]));
-full_adder u_a51_34(.a(stg4_s1_w[34]), .b(stg4_c1_w[33]), .ci(pp10_w2[16]),    .s(stg5_s1[34]), .co(stg5_c1[34]));
-full_adder u_a51_35(.a(stg4_s1_w[35]), .b(stg4_c1_w[34]), .ci(pp10_w2[17]),    .s(stg5_s1[35]), .co(stg5_c1[35]));
+full_adder u_a51_18(.a(stg4_s1_w[18]), .b(stg4_c1_w[17]), .ci(pp10_w5[ 0]),    .s(stg5_s1[18]), .co(stg5_c1[18]));
+full_adder u_a51_19(.a(stg4_s1_w[19]), .b(stg4_c1_w[18]), .ci(pp10_w5[ 1]),    .s(stg5_s1[19]), .co(stg5_c1[19]));
+full_adder u_a51_20(.a(stg4_s1_w[20]), .b(stg4_c1_w[19]), .ci(pp10_w5[ 2]),    .s(stg5_s1[20]), .co(stg5_c1[20]));
+full_adder u_a51_21(.a(stg4_s1_w[21]), .b(stg4_c1_w[20]), .ci(pp10_w5[ 3]),    .s(stg5_s1[21]), .co(stg5_c1[21]));
+full_adder u_a51_22(.a(stg4_s1_w[22]), .b(stg4_c1_w[21]), .ci(pp10_w5[ 4]),    .s(stg5_s1[22]), .co(stg5_c1[22]));
+full_adder u_a51_23(.a(stg4_s1_w[23]), .b(stg4_c1_w[22]), .ci(pp10_w5[ 5]),    .s(stg5_s1[23]), .co(stg5_c1[23]));
+full_adder u_a51_24(.a(stg4_s1_w[24]), .b(stg4_c1_w[23]), .ci(pp10_w5[ 6]),    .s(stg5_s1[24]), .co(stg5_c1[24]));
+full_adder u_a51_25(.a(stg4_s1_w[25]), .b(stg4_c1_w[24]), .ci(pp10_w5[ 7]),    .s(stg5_s1[25]), .co(stg5_c1[25]));
+full_adder u_a51_26(.a(stg4_s1_w[26]), .b(stg4_c1_w[25]), .ci(pp10_w5[ 8]),    .s(stg5_s1[26]), .co(stg5_c1[26]));
+full_adder u_a51_27(.a(stg4_s1_w[27]), .b(stg4_c1_w[26]), .ci(pp10_w5[ 9]),    .s(stg5_s1[27]), .co(stg5_c1[27]));
+full_adder u_a51_28(.a(stg4_s1_w[28]), .b(stg4_c1_w[27]), .ci(pp10_w5[10]),    .s(stg5_s1[28]), .co(stg5_c1[28]));
+full_adder u_a51_29(.a(stg4_s1_w[29]), .b(stg4_c1_w[28]), .ci(pp10_w5[11]),    .s(stg5_s1[29]), .co(stg5_c1[29]));
+full_adder u_a51_30(.a(stg4_s1_w[30]), .b(stg4_c1_w[29]), .ci(pp10_w5[12]),    .s(stg5_s1[30]), .co(stg5_c1[30]));
+full_adder u_a51_31(.a(stg4_s1_w[31]), .b(stg4_c1_w[30]), .ci(pp10_w5[13]),    .s(stg5_s1[31]), .co(stg5_c1[31]));
+full_adder u_a51_32(.a(stg4_s1_w[32]), .b(stg4_c1_w[31]), .ci(pp10_w5[14]),    .s(stg5_s1[32]), .co(stg5_c1[32]));
+full_adder u_a51_33(.a(stg4_s1_w[33]), .b(stg4_c1_w[32]), .ci(pp10_w5[15]),    .s(stg5_s1[33]), .co(stg5_c1[33]));
+full_adder u_a51_34(.a(stg4_s1_w[34]), .b(stg4_c1_w[33]), .ci(pp10_w5[16]),    .s(stg5_s1[34]), .co(stg5_c1[34]));
+full_adder u_a51_35(.a(stg4_s1_w[35]), .b(stg4_c1_w[34]), .ci(pp10_w5[17]),    .s(stg5_s1[35]), .co(stg5_c1[35]));
 
 wire [35:0] stg5_s1_w, stg5_c1_w;
 //================ if necessary, pipeline stg4_s* and stg4_c* here for timing ================

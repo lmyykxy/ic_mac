@@ -24,7 +24,7 @@ RUN_OPT := +UVM_NO_RELNOTES \
 		   -l $(LOG_DIR)/$(test)_$(seed).log
 
 comp: 
-	vcs $(COMP_OPT) $(PLI_PARAM) $(INC_DIR) -l $(LOG_DIR)/comp.log -f $(SRC_LST)
+	vcs -kdb $(COMP_OPT) $(PLI_PARAM) $(INC_DIR) -l $(LOG_DIR)/comp.log -f $(SRC_LST)
 
 run: comp
 	./simv $(RUN_OPT)
