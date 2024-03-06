@@ -19,6 +19,7 @@ module testbench;
   bit                  tc;
   wire [2*OPWIDTH-1:0] product;
   wire [2*OPWIDTH-1:0] product_ref;
+  reg [2*OPWIDTH-1:0] product_ref_d1,product_ref_d2,product_ref_d3;
 
   always @(posedge clk or rstn) begin
     if(~rstn) begin
@@ -27,11 +28,11 @@ module testbench;
       tc     <= 1'b0;
     end
     else begin
-    //   oper_a <= $random();
-    //   oper_b <= $random();
+      oper_a <= $random();
+      oper_b <= $random();
     //   tc     <= $random();
-      oper_a <= 'd64;
-      oper_b <= 'd64;
+    //   oper_a <= 'h8484_d609;
+    //   oper_b <= 'hb1f0_5663;
       tc     <= 0;
     end
   end
@@ -55,6 +56,19 @@ module testbench;
 		      .CLK     (clk   ),
 		      .PRODUCT (product_ref)
 		      );
+
+always @(posedge clk or rstn) begin
+    if(~rstn) begin
+		product_ref_d1 <= 'd0;
+		product_ref_d2 <= 'd0;
+		product_ref_d3 <= 'd0;
+    end
+    else begin
+		product_ref_d1 <= product_ref;
+		product_ref_d2 <= product_ref_d1;
+		product_ref_d3 <= product_ref_d2;
+    end
+  end
 
   initial begin
     $fsdbDumpfile("../wave/wave.fsdb");

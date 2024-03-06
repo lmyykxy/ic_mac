@@ -6,23 +6,21 @@ Notice: timing checks disabled with +notimingcheck at compile-time
 
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-7_Full64; Runtime version Q-2020.03-SP2-7_Full64;  Mar  5 18:56 2024
+Compiler version Q-2020.03-SP2-7_Full64; Runtime version Q-2020.03-SP2-7_Full64;  Mar  5 21:23 2024
 
 *Verdi* Loading libsscore_vcs202003.so
 
 FSDB Dumper for VCS, Release Verdi_R-2020.12-SP1, Linux x86_64/64bit, 03/02/2021
 (C) 1996 - 2021 by Synopsys, Inc.
-
 *Verdi* : Create FSDB file '/home/autumn/Desktop/ic_mac/mult32x32/run/inter.fsdb'
-
 *Verdi* : Flush all FSDB Files at 0 ps.
 
-*Verdi* : Enable RPC Server(68776)
+*Verdi* : Enable RPC Server(84587)
 
 srcTBInvokeSim
-Verdi>fsdbDumpvars 1 "testbench.product_ref"  +all +trace_process;fsdbDumpvars 1 "testbench.product"  +all +trace_process;fsdbDumpflush 
+Verdi>fsdbDumpvars 1 "testbench.product_ref_d3"  +all +trace_process;fsdbDumpvars 1 "testbench.product"  +all +trace_process;fsdbDumpflush 
 
-*Verdi* : Dumping the signal (testbench.product_ref).
+*Verdi* : Dumping the signal (testbench.product_ref_d3).
 *Verdi* : Dumping the signal (testbench.product).
 *Verdi* : Flush all FSDB Files at 0 ps.
 
@@ -31,3 +29,8 @@ Verdi>run 1000000.00ps
 *Verdi* : Begin traversing the scope (testbench), layer (0).
 *Verdi* : End of traversing.
 1000000 ps
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1000000 ps
+CPU Time:      0.230 seconds;       Data structure size:   0.1Mb
+Tue Mar  5 21:24:32 2024
+debExit
