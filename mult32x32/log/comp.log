@@ -8,7 +8,7 @@ Command: vcs -kdb -sverilog +v2k -full64 -timescale=1ns/1ps -debug_all +notiming
 /usr/Synopsys/verdi/R-2020.12-SP1/share/PLI/VCS/linux64/pli.a +incdir+../src+/usr/Synopsys/syn/R-2020.09-SP4/dw/sim_ver \
 -l ../log/comp.log -f ../src/src.lst
                          Chronologic VCS (TM)
-      Version Q-2020.03-SP2-7_Full64 -- Tue Mar  5 21:23:45 2024
+      Version Q-2020.03-SP2-7_Full64 -- Tue Mar  5 21:36:00 2024
                Copyright (c) 1991-2020 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -36,8 +36,7 @@ TimeScale is 1 ns / 1 ps
 Starting vcs inline pass...
 
 4 modules and 0 UDP read.
-recompiling module testbench
-	However, due to incremental compilation, only 1 module needs to be compiled. 
+	However, due to incremental compilation, no re-compilation is necessary.
 make[1]: Entering directory `/home/autumn/Desktop/ic_mac/mult32x32/run/csrc'
 rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
 ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
@@ -45,7 +44,7 @@ rm -f _cuarc0.so
 if [ -x ../simv ]; then chmod a-x ../simv; fi
 g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
 -Wl,-rpath=/usr/Synopsys/vcs/Q-2020.03-SP2-7/linux64/lib -L/usr/Synopsys/vcs/Q-2020.03-SP2-7/linux64/lib \
--Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _84272_archive_1.so _prev_archive_1.so \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _86323_archive_1.so _prev_archive_1.so \
 _cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
 rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs /usr/Synopsys/verdi/R-2020.12-SP1/share/PLI/VCS/linux64/pli.a \
 -lvcsnew -lsimprofile -luclinative /usr/Synopsys/vcs/Q-2020.03-SP2-7/linux64/lib/vcs_tls.o \
@@ -54,5 +53,5 @@ rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs /usr/Synopsys/ve
 -lpthread -ldl 
 ../simv up to date
 make[1]: Leaving directory `/home/autumn/Desktop/ic_mac/mult32x32/run/csrc'
-CPU time: .325 seconds to compile + .232 seconds to elab + .151 seconds to link
+CPU time: .335 seconds to compile + .263 seconds to elab + .158 seconds to link
 Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
