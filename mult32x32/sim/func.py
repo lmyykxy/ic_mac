@@ -8,6 +8,9 @@ class UnalignWidthError(Exception):
         self.message = message
         super().__init__(self.message)
 
+def str_sft_pad0(strbin,sft_num=0):
+	return strbin[sft_num:] + '0'*sft_num
+
 def unsigned_extended(num, ext_width):
 	return format(num, '0{}b'.format(ext_width))
 
@@ -70,3 +73,17 @@ def csa_compute(num1,num2,num3):
 	if (len(out_s) != len(out_c)) or (len(out_s) != len(num1)):
 		raise UnalignWidthError('CSA运算数据输出不等长')
 	return out_s,out_c
+
+def full_compute(num1,num2):
+	# 校验三个数据是否位宽相等
+	if not len(num1)==len(num2):
+		raise UnalignWidthError('全加器输入数据之间不等长')
+	
+	out_s=''
+	c = '0'
+	for i in range(len(num1)):
+		j = len(num1)-i-1
+		s,c = full_adder(num1[j],num2[j],c)
+		out_s = s + out_s
+
+	return out_s
