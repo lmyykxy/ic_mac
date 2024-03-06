@@ -570,7 +570,7 @@ full_adder u_a23_43 (.a(stg1_s4_w[37]), .b(stg1_c4_w[37]), .ci(stg1_s5_w[37]), .
 assign stg2_s4[4:0] = stg1_c5_w[4:0];
 assign stg2_c4[4:0] = 5'b0; 
 half_adder u_a24_5  (.a(stg1_c5_w[ 5]), .b(pp16_w2[ 0]),                   .s(stg2_s4[ 5]), .co(stg2_c4[ 5]));
-full_adder u_a24_6  (.a(stg1_c5_w[ 6]), .b(pp16_w2[ 1]),                   .s(stg2_s4[ 6]), .co(stg2_c4[ 6]));
+half_adder u_a24_6  (.a(stg1_c5_w[ 6]), .b(pp16_w2[ 1]),                   .s(stg2_s4[ 6]), .co(stg2_c4[ 6]));
 full_adder u_a24_7  (.a(stg1_c5_w[ 7]), .b(pp16_w2[ 2]), .ci(pp17_w2[ 0]), .s(stg2_s4[ 7]), .co(stg2_c4[ 7]));
 full_adder u_a24_8  (.a(stg1_c5_w[ 8]), .b(pp16_w2[ 3]), .ci(pp17_w2[ 1]), .s(stg2_s4[ 8]), .co(stg2_c4[ 8]));
 full_adder u_a24_9  (.a(stg1_c5_w[ 9]), .b(pp16_w2[ 4]), .ci(pp17_w2[ 2]), .s(stg2_s4[ 9]), .co(stg2_c4[ 9]));
@@ -820,7 +820,8 @@ assign stg4_s1[0] = stg3_s1_w[0];
 assign stg4_c1[0] = 1'b0;
 half_adder u_a41_1  (.a(stg3_s1_w[ 1]), .b(stg3_c1_w[ 0]),                     .s(stg4_s1[ 1]), .co(stg4_c1[ 1]));
 half_adder u_a41_2  (.a(stg3_s1_w[ 2]), .b(stg3_c1_w[ 1]),                     .s(stg4_s1[ 2]), .co(stg4_c1[ 2]));
-half_adder u_a41_3  (.a(stg3_s1_w[ 3]), .b(stg3_c1_w[ 2]),                     .s(stg4_s1[ 4]), .co(stg4_c1[ 4]));
+half_adder u_a41_3  (.a(stg3_s1_w[ 3]), .b(stg3_c1_w[ 2]),                     .s(stg4_s1[ 3]), .co(stg4_c1[ 3]));
+half_adder u_a41_4  (.a(stg3_s1_w[ 4]), .b(stg3_c1_w[ 3]),                     .s(stg4_s1[ 4]), .co(stg4_c1[ 4]));
 half_adder u_a41_5  (.a(stg3_s1_w[ 5]), .b(stg3_c1_w[ 4]),                     .s(stg4_s1[ 5]), .co(stg4_c1[ 5]));
 half_adder u_a41_6  (.a(stg3_s1_w[ 6]), .b(stg3_c1_w[ 5]),                     .s(stg4_s1[ 6]), .co(stg4_c1[ 6]));
 half_adder u_a41_7  (.a(stg3_s1_w[ 7]), .b(stg3_c1_w[ 6]),                     .s(stg4_s1[ 7]), .co(stg4_c1[ 7]));
@@ -833,7 +834,7 @@ full_adder u_a41_13 (.a(stg3_s1_w[13]), .b(stg3_c1_w[12]), .ci(stg3_s2_w[ 5]), .
 full_adder u_a41_14 (.a(stg3_s1_w[14]), .b(stg3_c1_w[13]), .ci(stg3_s2_w[ 6]), .s(stg4_s1[14]), .co(stg4_c1[14]));
 full_adder u_a41_15 (.a(stg3_s1_w[15]), .b(stg3_c1_w[14]), .ci(stg3_s2_w[ 7]), .s(stg4_s1[15]), .co(stg4_c1[15]));
 full_adder u_a41_16 (.a(stg3_s1_w[16]), .b(stg3_c1_w[15]), .ci(stg3_s2_w[ 8]), .s(stg4_s1[16]), .co(stg4_c1[16]));
-full_adder u_a41_17 (.a(stg3_s1_w[17]), .b(stg3_c1_w[16]), .ci(stg3_s2_w[ 9]), .s(stg4_s1[17]), .co(stg4_c1[17]));
+full_adder u_a41_17 (.a(stg3_s1_w[17]), .b(stg3_c1_w[16]), .ci(stg3_s2_w[9]), .s(stg4_s1[17]), .co(stg4_c1[17]));
 full_adder u_a41_18 (.a(stg3_s1_w[18]), .b(stg3_c1_w[17]), .ci(stg3_s2_w[10]), .s(stg4_s1[18]), .co(stg4_c1[18]));
 full_adder u_a41_19 (.a(stg3_s1_w[19]), .b(stg3_c1_w[18]), .ci(stg3_s2_w[11]), .s(stg4_s1[19]), .co(stg4_c1[19]));
 full_adder u_a41_20 (.a(stg3_s1_w[20]), .b(stg3_c1_w[19]), .ci(stg3_s2_w[12]), .s(stg4_s1[20]), .co(stg4_c1[20]));

@@ -6,19 +6,18 @@ Notice: timing checks disabled with +notimingcheck at compile-time
 
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-7_Full64; Runtime version Q-2020.03-SP2-7_Full64;  Mar  5 03:59 2024
+Compiler version Q-2020.03-SP2-7_Full64; Runtime version Q-2020.03-SP2-7_Full64;  Mar  5 18:56 2024
 
 *Verdi* Loading libsscore_vcs202003.so
 
 FSDB Dumper for VCS, Release Verdi_R-2020.12-SP1, Linux x86_64/64bit, 03/02/2021
-
 (C) 1996 - 2021 by Synopsys, Inc.
 
-*Verdi* : Create FSDB file '/home/autumn/Desktop/ic_mac/mult18x18/run/inter.fsdb'
+*Verdi* : Create FSDB file '/home/autumn/Desktop/ic_mac/mult32x32/run/inter.fsdb'
 
 *Verdi* : Flush all FSDB Files at 0 ps.
 
-*Verdi* : Enable RPC Server(46338)
+*Verdi* : Enable RPC Server(68776)
 
 srcTBInvokeSim
 Verdi>fsdbDumpvars 1 "testbench.product_ref"  +all +trace_process;fsdbDumpvars 1 "testbench.product"  +all +trace_process;fsdbDumpflush 
@@ -28,20 +27,7 @@ Verdi>fsdbDumpvars 1 "testbench.product_ref"  +all +trace_process;fsdbDumpvars 1
 *Verdi* : Flush all FSDB Files at 0 ps.
 
 Verdi>run 1000000.00ps
-*Verdi* WARNING: Env/runtime option has specified fsdbfile name as "/home/autumn/Desktop/ic_mac/mult18x18/run/inter.fsdb". Fsdbfile name in task "../wave/wave.fsdb" is ignored.
+*Verdi* WARNING: Env/runtime option has specified fsdbfile name as "/home/autumn/Desktop/ic_mac/mult32x32/run/inter.fsdb". Fsdbfile name in task "../wave/wave.fsdb" is ignored.
 *Verdi* : Begin traversing the scope (testbench), layer (0).
 *Verdi* : End of traversing.
 1000000 ps
-Verdi>run 1000000.00ps
-2000000 ps
-Verdi>run 1000000.00ps
-3000000 ps
-Verdi>run 1000000.00ps
-4000000 ps
-Verdi>run 10000000.00ps
-14000000 ps
-           V C S   S i m u l a t i o n   R e p o r t 
-Time: 14000000 ps
-CPU Time:      0.260 seconds;       Data structure size:   0.0Mb
-Tue Mar  5 04:07:41 2024
-debExit
